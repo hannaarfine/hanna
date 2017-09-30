@@ -64,7 +64,6 @@ nav {
   text-align: center;
   padding: 10px 0;
   margin: 20px 0 0;
-  color: #000;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -199,7 +198,7 @@ body{
   color: #999;
 }
 
-/*blue header*/
+/*white header*/
 header {
   background: #fff;
   color: #000;
@@ -217,15 +216,15 @@ h1, h2{
 
 /*links*/
 a{
- color: #9bcfdc;
+ color: #000;
 }
 
 /*nav links*/
 nav a, nav a:visited {
-  color: #fff;
+  color: #000;
 }
 
 /*selected nav links*/
 nav a.selected, nav a:hover{
-  color: #5d7c84;
+  color: #000;
 }
