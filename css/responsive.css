@@ -47,8 +47,8 @@ nav{
    float: right;
    text-align: right;
    margin: 0 auto;
-   padding: 20px 40px 15px;
-   max-width: 1220px;
+   padding: 20px 180px 15px;
+   width: 78%;
   }
 
  #logo{
