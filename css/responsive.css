@@ -45,10 +45,10 @@ HEADER
 nav{
    background: none;
    float: right;
-   font-size: 1.125em;
-   margin-right: 5%;
    text-align: right;
-   width: 45%;
+   margin: 0 auto;
+   padding: 20px 40px 15px;
+   max-width: 1220px;
   }
 
  #logo{
