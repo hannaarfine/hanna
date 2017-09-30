@@ -197,18 +197,18 @@ body{
 
 /*blue header*/
 header {
-  background: #9bcfdc;
-  border-color: #8ab7c2;
+  background: #fff;
+  color: #000;
 }
 
 /*nav background on mobile*/
 nav{
- background: #79a7b3;
+ background: #fff;
 }
 
 /*logo text*/
 h1, h2{
-  color: #fff;
+  color: #000;
 }
 
 /*links*/
