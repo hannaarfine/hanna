@@ -11,6 +11,10 @@ body{
   margin: 50px auto 50px auto;
 }
 
+.content {
+  width: 500px;
+}
+
 #wrapper {
   max-width: 940px;
   margin:0 auto;
@@ -23,6 +27,11 @@ a{
 
 img{
   max-width: 100%;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 70px;
 }
 
 h3{
