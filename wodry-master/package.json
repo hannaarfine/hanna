@@ -1,0 +1,30 @@
+{
+  "name": "wodry.js",
+  "version": "0.2.1",
+  "description": "wodry.js ========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/daynin/wodry.js.git"
+  },
+  "author": "Sergey Golovin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daynin/wodry.js/issues"
+  },
+  "homepage": "https://github.com/daynin/wodry.js",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-notify": "^0.3.0",
+    "grunt-contrib-coffee": "^0.10.1"
+  },
+  "dependencies": {
+    "jquery": "^1.11.0"
+  }
+}
