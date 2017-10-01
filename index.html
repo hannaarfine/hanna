@@ -33,7 +33,7 @@
           <h1>Hi, </hr>
           <h1> I'm Hanna. </h1>
           <div>
-            Bla bla bla <span class="wodry">word1|word2|word3</span>
+            Bla bla bla <span class="wodryRX">word1|word2|word3</span>
           </div>
         </div>
 
@@ -87,7 +87,11 @@
       </footer>
     </div> -->
     <script type="text/javascript" src="js/wodry.min.js">
-      $('.wodry').wodry();
+    $('.wodryRX').wodry({
+        animation: 'rotateX',
+        delay: 1000,
+        animationDuration: 800
+      });
     </script>
 
   </body>
