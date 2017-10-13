@@ -59,9 +59,12 @@ nav{
   }
 
   h1{
-    font-size: 60px;
-    line-height: 70px;
-    font-weight: bold;
+    font-size: 60px !important;
+    line-height: 70px !important;
+    font-weight: bold !important;
+  }
+  a{
+    text-decoration: none !important;
   }
 
   h2{

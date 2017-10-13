@@ -10,13 +10,15 @@
     <link rel = "stylesheet" href="css/responsive.css">
     <link rel = "stylesheet" href="css/wodry.css">
     <link rel = "stlesheet" href="https://cdnjs.com/libraries/uikit">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.gradient.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <!-- <script src="js/scripts.js"></script> -->
+    <script src="js/scripts.js"></script>
 
     <header>
       <!-- <a href="index.html" id="logo">
@@ -33,11 +35,14 @@
 
     <section class="section--hero">
       <div class="container-landing">
-        <div class="content">
+        <div class="content hidden">
           <h1>Hi, </hr>
           <h1> I'm Hanna. </h1>
           <div>
-            Bla bla bla <p id="demo">word1|word2|word3</p>
+            A student at Cornell University &amp;
+            <span id="front">front end engineer</span>
+            <span id="design">designer</span>
+            <span id="dog">dog lover</span>
           </div>
         </div>
 
@@ -90,13 +95,5 @@
         <p>&copy; 2017 Hanna Arfine.</p>
       </footer>
     </div> -->
-
-    <script>
-    $(document).ready(function() {
-        // all custom jQuery will go here
-        $("#demo").fadeIn();
-    });
-
-    </script>
   </body>
 </html>

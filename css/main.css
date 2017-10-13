@@ -47,6 +47,10 @@ h3{
   padding: 100px 0;
 }
 
+.hidden {
+  display: none;
+}
+
 /************************
 HEADING
 ************************/
@@ -115,7 +119,6 @@ footer{
   text-align: center;
   clear: both;
   padding-top: 50px;
-  color: #ccc;
 }
 
 
@@ -141,7 +144,7 @@ PAGE: PORTFOLIO
   width: 45%;
   margin: 2.5%;
   background-color: #f5f5f5;
-  color: #bdc3c7;
+  color: #444;
 
 }
 
@@ -149,7 +152,7 @@ PAGE: PORTFOLIO
   margin:0;
   padding: 5%;
   font-size:0.75em;
-  color: #bdc3c7;
+  color: #444;
 }
 
 
@@ -166,7 +169,7 @@ PAGE: ABOUT
 }
 
 p{
- color: #888888;
+ color: #444;
 }
 
 
@@ -218,13 +221,13 @@ COLORS
 /* site body*/
 body{
   background-color: #fff;
-  color: #999;
+  color: #777;
 }
 
 /*white header*/
 header {
   background: #fff;
-  color: #000;
+  color: #444;
 }
 
 /*nav background on mobile*/
@@ -234,17 +237,17 @@ nav{
 
 /*logo text*/
 h1, h2{
-  color: #000;
+  color: #444;
 }
 
 /*links*/
 a{
- color: #000;
+ color: #444;
 }
 
 /*nav links*/
 nav a, nav a:visited {
-  color: #000;
+  color: #444;
 }
 
 nav a:hover {
@@ -253,5 +256,5 @@ nav a:hover {
 
 /*selected nav links*/
 nav a.selected, nav a:hover{
-  color: #000;
+  color: #444;
 }
