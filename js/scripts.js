@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $(document).ready(function () {
-    $('.hidden').fadeIn(1500).removeClass('hidden');
+    $('.hidden').fadeIn(1600).removeClass('hidden');
 
     $("#design, #dog").hide();
   var mentCounter = 0;

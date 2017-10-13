@@ -60,7 +60,7 @@ nav{
 
   h1{
     font-size: 60px !important;
-    line-height: 70px !important;
+    line-height: 50px !important;
     font-weight: bold !important;
   }
   a{
@@ -70,10 +70,12 @@ nav{
   h2{
    font-size: 0.925em;
     margin-bottom: 20px;
+    font-weight: bold !important;
   }
 
   header{
     margin-bottom: 60px;
   }
+
 
 }
