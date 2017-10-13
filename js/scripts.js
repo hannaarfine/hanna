@@ -2,7 +2,7 @@ $(document).ready(function() {
   $(document).ready(function () {
     $('.hidden').fadeIn(1600).removeClass('hidden');
 
-    $("#design, #dog").hide();
+    $("#design, #dog, #coffee, #photo").hide();
   var mentCounter = 0;
   window.setInterval(function(){
     if(mentCounter === 0){
@@ -19,6 +19,18 @@ $(document).ready(function() {
     }
     else if(mentCounter == 2){
       $("#dog").fadeOut();
+      setTimeout(function(){
+        $("#photo").fadeIn();
+      },600);
+    }
+    else if(mentCounter == 3){
+      $("#photo").fadeOut();
+      setTimeout(function(){
+        $("#coffee").fadeIn();
+      },600);
+    }
+    else if(mentCounter == 4){
+      $("#coffee").fadeOut();
       setTimeout(function(){
         $("#front").fadeIn();
       },600);

@@ -58,12 +58,18 @@ p {
   padding: 100px 0;
 }
 
+.section--gray {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+
 .hidden {
   display: none;
 }
 
 .epithets {
-  font-size: 15px;
+  margin-top: 20px;
+  font-size: 17px;
   font-weight: 300;
   letter-spacing: .02em;
 }
