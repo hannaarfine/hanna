@@ -23,7 +23,7 @@ body{
 }
 
 .right-container2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)), url("../assets/space.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)), url("../assets/space.JPG") no-repeat center;
   height: 44vh;
 }
 
@@ -46,7 +46,7 @@ body{
    display: flex;
    align-items: center;
    justify-content: center;
-   -webkit-transition: opacity .25s ease;
+   -webkit-transition: opacity .7s ease;
 }
 
 #overlayblack   {
@@ -58,7 +58,7 @@ body{
    align-items: center;
    justify-content: center;
    opacity:0;
-   -webkit-transition: opacity .25s ease;
+   -webkit-transition: opacity .7s ease;
 }
 
 .right-container1:hover #overlayblack {
