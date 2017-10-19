@@ -59,8 +59,8 @@ nav{
   }
 
   h1{
-    font-size: 60px !important;
-    line-height: 50px !important;
+    font-size: 90px !important;
+    line-height: 80px !important;
     font-weight: bold !important;
   }
   a{
@@ -73,9 +73,9 @@ nav{
     font-weight: bold !important;
   }
 
-  header{
+  /*header{
     margin-bottom: 60px;
-  }
+  }*/
 
 
 }
