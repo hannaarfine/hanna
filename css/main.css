@@ -20,20 +20,29 @@ body{
 .right-container1 {
   background: #F2E605;
   height: 50%;
+  background-image: url(../assets/mac.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.right-container1 h3 {
+  text-align: center;
+  font-size: 16px !important;
+  text-transform: none !important;
+  padding-top: 15px;
 }
 
 .right-container2 {
   height: 50%;
+  background-size: cover;
 }
 
-.right-container2 h2 {
-  padding: 20px;
+.right-container2 h3 {
   text-align: center;
-  font-family: 'Helvetica Neue';
-  font-size: 14px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  color: #fff;
+  font-size: 16px !important;
+  text-transform: none !important;
+  padding-top: 15px;
+  color: #fff !important;
 }
 
 #overlay    {
@@ -45,7 +54,6 @@ body{
    display: flex;
    align-items: center;
    justify-content: center;
-   -webkit-transition: opacity .7s ease;
 }
 
 #overlayblack   {
@@ -57,15 +65,27 @@ body{
    align-items: center;
    justify-content: center;
    opacity:0;
-   -webkit-transition: opacity .7s ease;
+}
+
+.right-container1:hover h3 {
+  visibility: hidden;
 }
 
 .right-container1:hover #overlayblack {
   opacity: .8;
+  margin-top: -52px;
+  -webkit-transition: opacity .5s ease;
+
+}
+
+.right-container2:hover h3 {
+  visibility: hidden;
 }
 
 .right-container2:hover #overlay {
   opacity: .8;
+  margin-top: -52px;
+  -webkit-transition: opacity .5s ease;
 }
 
 #more {
@@ -90,6 +110,7 @@ body{
   text-align: center;
   margin: 0px;
 }
+
 
 #sayhi {
   border: 3px solid #7AD0E4;
