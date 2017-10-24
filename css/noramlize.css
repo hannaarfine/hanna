@@ -130,14 +130,16 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
-    margin: 0.83em 0;
+    font-size: 34px;
     font-weight: bold;
+    font-family: 'Domine', serif;
+    text-align: center;
 }
 
 h3 {
-    font-size: 1.17em;
-    margin: 1em 0;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 h4 {

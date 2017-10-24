@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>Hanna | Front End &amp; Design</title>
     <link rel = "stylesheet" href="css/noramlize.css">
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
     <link rel = "stylesheet" href="css/main.css">
     <link rel = "stylesheet" href="css/responsive.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -13,6 +12,7 @@
     <link rel = "stlesheet" href="https://cdnjs.com/libraries/uikit">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.gradient.css" />
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
@@ -21,9 +21,6 @@
 
 
     <header>
-      <!-- <a href="index.html" id="logo">
-        <h1>Hanna Arfine</h1>
-      </a> -->
       <nav>
         <ul>
           <li><a href="about.html">About</a></li>
@@ -33,108 +30,145 @@
       </nav>
     </header>
 
-    <section class="section--hero">
-      <div class="uk-grid">
+    <div class="section--hero">
+      <div class="uk-grid" style="height: 100%;">
       <div class="uk-width-1-2 left-container">
         <div class="content hidden">
           <h1>Hi, </h1>
           <h1> I'm Hanna. </h1>
-          <!-- <div class="epithets">
+          <div class="epithets">
             Student at Cornell University &amp;
-            <span id="front">front end engineer</span>
-            <span id="design">designer</span>
-            <span id="dog">dog lover</span>
-            <span id="coffee">coffee guzzler</span>
-            <span id="photo">photographer</span>
-          </div> -->
+            <span id="epithets"></span>
+          </div>
           <div style="padding-top: 100px;">
-            <button class="btn-basic"> A bit about me </button>
+            <a href="#bio" class="btn-basic" data-uk-smooth-scroll="{duration:1800}"> A bit about me </a>
           </div>
           </div>
         </div>
 
-        <div class="uk-width-1-2" style="padding-left: 0;">
+        <div class="uk-width-1-2" style="padding-left: 0; height: 100%;">
           <div class="right-container1">
             <div id="overlayblack">
               <span id="more" style="color: #000;">See more </span>
             </div>
           </div>
-          <div class="right-container2" id="title">
+          <div class="right-container2" id="image-head" style="background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)), url(assets/space.jpg) no-repeat center;">
             <div id="overlay">
               <span id="more">See more </span>
             </div>
-
-            <h2> Design &amp; Photography</h2>
-            <!-- <img src = "assets/space.jpg"> -->
           </div>
         </div>
 
       </div>
       </div>
-    </section>
 
-    <section class="section--hero">
       <div data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}">
+      <div class="dots">
       <div class="container-landing">
+
         <div class="uk-grid">
-        <div class="uk-width-1-2">
-          <div>
-            <img class="headshot" src="assets/headshot.jpg">
+          <div class="uk-width-1-1">
+            <h2>These are some things I can do:</h2>
           </div>
-        </div>
-        <div class="bio uk-width-1-2" id="bio">
-          <h2>a bit about me</h2>
-          <p>I’m a junior in Cornell’s school of engineering studying information science, and I like making websites look nice.</p>
-          <p>
-            I’ve spent the past year working with <a href="http://dmig.dyson.cornell.edu", target="_blank">Dyson Media Innovation Group</a> as their lead designer and front end developer.
-            With them, I realized the convergence of two of my lifelong interests — technology and design.
-            This past summer, I joined the team at <a href="https://startuptree.co/", target="_blank">StartupTree</a>, where I continue to do design and front end engineering.
-          </p>
-          <p>
-            A few of my hobbies include taking <a href="http://vsco.co/harfine/images/1", target="_blank">photos</a>, playing music, and going to flea markets. I really like playing outside, especially with my 2 dogs.
-          </p>
+          <div class="cando uk-width-1-3">
+            <img src = "assets/brackets.svg" id = "icon1">
+            <h3>Frontend <br /> Engineering</h3>
+            <p>HTML, CSS, Javascript, jQuery, SCSS, Slim, Python, Java, Rails </p>
+          </div>
+          <div class="cando uk-width-1-3">
+            <img src = "assets/light.svg" id = "icons">
+            <h3>UI/UX <br /> Design</h3>
+            <p>Photoshop, Illustrator, InVision, concept design, wireframing </p>
+          </div>
+          <div class="cando uk-width-1-3">
+            <img src = "assets/box.svg" id = "icons">
+            <h3>Product <br /> Development</h3>
+            <p>Logo design, product identity, vector design </p>
+          </div>
         </div>
         </div>
       </div>
-    </div>
-    </section>
-
-    <section class="section--white">
-      <div data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}">
-      <div class="container-landing">
-        <div class="uk-text-center"><h2>Things I Can Do</h2></div>
-        <div class="uk-grid">
-          <div class="uk-width-1-4">
-              <img src="assets/light.svg">
-          </div>
-        </div>
+      <div class = "dot-small">
+        <br><br><br>
       </div>
     </div>
 
-    </section>
+
+    <div data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}" id="bio">
+      <div class="uk-grid" style="height: calc(100vh + 100px);">
+      <div class="uk-width-1-2 left-container">
+        <div class="content-left" style="font-weight: bold;">
+          <p>I’m a junior in Cornell’s school of engineering studying information science, and I like making websites look nice &amp; work well.</p>
+          <br><br><br><br>
+          <div id = "aboutme"> A Bit About Me </div>
+          <br><br><br><br><br><br>
+          <p>This past summer, I joined the team at <a href="https://startuptree.co/", target="_blank">StartupTree</a>, where I continue to do design and front end engineering. </p>
+          <br>
+          <p>A few of my hobbies include <a href="http://vsco.co/harfine/images/1", target="_blank">taking photos</a>, playing music, and traveling. I really like playing outside, especially with my 2 dogs. </p>
+          </div>
+        </div>
+
+        <div class="bio uk-width-1-2" style="padding-left: 0; height: 100%;">
+          <div class="content-right">
+          <p>I’ve spent the past year working with <a href="http://dmig.dyson.cornell.edu", target="_blank"> Dyson Media Innovation Group</a> as their lead designer and front end developer. </p>
+          <p>With them, I realized the convergence of two of my lifelong interests: technology and design.</p>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+      <div class="dots-right" data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}">
+
+      <div class="container-landing">
+
+        <div class="uk-grid">
+          <div class="uk-width-1-1">
+            <h2>I've been working on a few things lately:</h2>
+          </div>
+          <div class="uk-width-1-10"></div>
+          <div class="uk-width-8-10 up-to no-flicker" id="upto3">
+            <h2>StartupTree</h2>
+            <p>Designed and built front-end features for startup creating the leading web platform for university entrepreneurship.</p>
+          </div>
+          <div class="uk-width-1-10"></div>
+          <div class="uk-width-1-1"><br><br></div>
+          <div class="uk-width-1-10"></div>
+          <div class="uk-width-8-10 up-to no-flicker" id="upto3">
+            <h2>Dyson Media Innovation Group</h2>
+            <p>Developed all graphics and user interface for management system used by university’s faculty and 14,000+ students pursuing business minors at Cornell.</p>
+          </div>
+          <div class="uk-width-1-1"><br><br></div>
+          <div class="uk-width-1-10"></div>
+          <div class="uk-width-8-10 up-to no-flicker" id="upto3">
+            <h2>Personal Projects</h2>
+            <p>Designed and implemented audio-interactive visualizer using Processing.</p>
+            <br>
+          </div>
+
+        </div>
+        </div>
+    </div>
 
     <footer>
       <section class="section--gray">
-
-        <div class="container-landing">
-
-          <div class="uk-grid">
-            <div class="uk-width-1-2">
-                <h2>Talk to me</h2>
-            </div>
-            <div class="uk-width-1-2">
-              <div class="uk-grid">
-                <div class="uk-width-1-3">
-                  Contact
-                </div>
-                <div class="uk-width-1-3">
-                  Social Media
-                </div>
-              </div>
-            </div>
+        <div class="container--footer" style="width: 400px;">
+          <div id = "sayhi"> Say Hi to Me </div>
+        <div class="social-icon uk-grid">
+          <div class="uk-width-1-4">
+            <a href="https://www.instagram.com/hanna_isfine/", target="_blank"><img src = "assets/instagram.svg"></a>
+          </div>
+          <div class="uk-width-1-4">
+            <a href="mailto:ha264@cornell.edu"><img src = "assets/mail.svg"></a>
+          </div>
+          <div class="uk-width-1-4">
+            <a href="https://www.vsco.co/harfine", target="_blank"><img src = "assets/vsco.svg"></a>
+          </div>
+          <div class="uk-width-1-4">
+            <a href="https://www.linkedin.com/in/hanna-arfine-02b42b129/", target="_blank"><img src = "assets/in.svg"></a>
           </div>
         </div>
-
+        </div>
       </section>
     </footer>
 
