@@ -334,7 +334,8 @@ BUTTONS
   letter-spacing: 2px;
   font-weight: bold;
   border: none !important;
-  padding: 12px;
+  padding: 12px 14px;
+  position: absolute;
 }
 
 .btn-basic:hover {
