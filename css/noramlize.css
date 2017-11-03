@@ -137,19 +137,25 @@ h2 {
 }
 
 h3 {
-  font-size: 22px;
-  text-transform: uppercase;
-  font-weight: bold;
+    font-size: 1.17em;
+    margin: 1em 0;
 }
 
 h4 {
-    font-size: 1em;
-    margin: 1.33em 0;
+    font-family: 'Domine', serif !important;
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-align: left;
+    color: #000 !important;
+    line-height: 34px !important;
 }
 
 h5 {
-    font-size: 0.83em;
-    margin: 1.67em 0;
+    font-size: 1em !important;
+    text-transform: uppercase !important;
+    font-weight: 400 !important;
+    letter-spacing: 2px;
+    color: #bebebe !important;
 }
 
 h6 {

@@ -11,6 +11,14 @@ body{
   margin: 75px auto 75px auto;
 }
 
+.container-work {
+  max-width: 1200px;
+  margin: 75px auto 75px auto;
+}
+.container-work p{
+  margin-left: 0;
+  padding-left: 0;
+}
 .left-container {
   padding-left: 160px !important;
   background: #7AD0E4;
@@ -460,30 +468,77 @@ footer{
 PAGE: PORTFOLIO
 ************************/
 
-#gallery{
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.project h2{
+  text-align: left;
 }
 
-#gallery li{
-  float: left;
-  width: 45%;
-  margin: 2.5%;
-  background-color: #f5f5f5;
-  color: #000;
-
+.project p {
+  text-align: left;
+  padding-left: 0;
 }
 
-#gallery li a p{
-  margin:0;
-  padding: 5%;
-  font-size:0.75em;
-  color: #000;
+.project {
+  border: 2px solid #7AD0E4;
 }
 
+.project-left {
+  padding: 40px;
+}
 
+.work-image {
+  height: 300px;
+  overflow-y: hidden;
+  border-bottom: 15px solid #7AD0E4;
+}
 
+.work-image img {
+  max-width: 100%;
+
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.work-image:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.solid-panel {
+  background: #7AD0E4;
+  width: 30.5%;
+  margin-left: 29px !important;
+  padding-left: 0 !important;
+}
+
+.solid-panel h4{
+  font-size: 34px !important;
+  font-weight: normal !important;
+  line-height: 40px !important;
+  padding: 40px;
+}
+
+.solid-panel p {
+  padding: 20px 40px 40px 40px;
+}
+
+.solid-panel-left {
+  background: #7AD0E4;
+  width: 30%;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+
+.solid-panel-left h4{
+  font-size: 34px !important;
+  font-weight: normal !important;
+  line-height: 40px !important;
+  padding: 40px;
+}
+
+.solid-panel-left p {
+  padding: 20px 40px 40px 40px;
+}
 /************************
 PAGE: ABOUT
 ************************/
