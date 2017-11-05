@@ -152,12 +152,6 @@ body{
   padding: 120px 0;
 }
 
-#wrapper {
-  max-width: 940px;
-  margin:0 auto;
-  padding: 0 5%;
-}
-
 a{
  text-decoration:none;
 }
@@ -195,6 +189,14 @@ p {
 .section--hero {
   padding: 85px 0;
   height: calc(100vh - 80px);
+}
+
+.section--cover {
+  padding: 85px 0;
+  height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section--white {
@@ -321,6 +323,14 @@ p {
   margin-top: 0;
 }
 
+.up-to a:hover{
+  background: transparent;
+}
+
+.up-to a {
+  padding: 0;
+}
+
 #upto3:hover {
     box-shadow: inset 900px 0 0 0 #7AD0E4;
 }
@@ -330,14 +340,19 @@ p {
 	-webkit-perspective: 1000;*/
 }
 
+.cover {
+  width: 100vw;
+  height: 750px;
+}
+
 /************************
 BUTTONS
 ************************/
-.btn-basic {
-  background-color: #fff;
+#btn-basic {
+  background-color: #fff !important;
   color: #000;
   font-family: 'Helvetica Neue', sans-serif;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: bold;
@@ -346,7 +361,7 @@ BUTTONS
   position: absolute;
 }
 
-.btn-basic:hover {
+btn-basic:hover {
   background-color: #000;
   color: #fff !important;
 }
@@ -447,7 +462,8 @@ nav a:hover {
 
 .work-header a{
   font-size: 38px;
-  background-image: linear-gradient(180deg,transparent 65%,#7AD0E4 0);
+  padding: 25px 60px;
+  background: #fff;
   background-size: 0 100%;
   background-repeat: no-repeat;
   text-decoration: none;
@@ -591,10 +607,12 @@ PAGE: PORTFOLIO
   padding: 20px 40px 40px 40px;
 }
 
-.work-roles {
-  max-width: 900px;
-  margin: auto !important;
-  text-align: center;
+.work-roles h2{
+  font-weight: 400 !important;
+  font-size: 50px;
+  line-height: 70px;
+  /*font-style: italic;*/
+  text-align: left;
 }
 
 .work-roles h5 {
@@ -603,6 +621,27 @@ PAGE: PORTFOLIO
 
 .work-roles div {
   padding-left: 0;
+}
+
+.work-roles h2 {
+  margin-bottom: 20px !important;
+}
+.work-roles h3 {
+  font-weight: normal !important;
+  font-size: 15px !important;
+  color: #bebebe !important;
+}
+
+.work-roles h4 {
+  font-weight: normal !important;
+  font-style: italic;
+  font-size: 20px !important;
+}
+
+.role--header {
+  height: 5px;
+  border-bottom: 4px solid #000;
+  margin-top: 30px !important;
 }
 /************************
 PAGE: ABOUT
