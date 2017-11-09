@@ -26,7 +26,7 @@ body{
 }
 
 .left-container {
-  padding-left: 160px !important;
+  padding-left: 10% !important;
   background: #7AD0E4;
   height: 100%;
 }
@@ -142,7 +142,7 @@ body{
 }
 
 .content {
-  width: 460px;
+  width: 80%;
   padding: 120px 0;
 }
 
