@@ -388,6 +388,10 @@ p {
   margin: 0 15px;
 }
 
+#smoke2 {
+  width: 100vw;
+  margin-top: 400px;
+}
 .up-to {
   padding: 10px 0 10px 35px;
   border-left: 4px solid #7AD0E4;
@@ -614,7 +618,7 @@ PAGE: PORTFOLIO
 
 .work-image {
   height: 300px;
-  overflow-y: hidden;
+  overflow: hidden;
   border-bottom: 15px solid #7AD0E4;
 }
 

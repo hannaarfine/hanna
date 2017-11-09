@@ -65,4 +65,40 @@ nav{
   #overlayblack {
     display: none;
   }
+
+  .dot-small {
+    display: none;
+  }
+  .dots {
+    background: transparent !important;
+    padding: 20px;
+    margin-top: 500px;
+  }
+  .dots-right {
+    background: transparent;
+  }
+  .left-container {
+    padding: 20px !important;
+  }
+  .right-container {
+    padding: 20px !important;
+  }
+  .content-right {
+    width: auto;
+    padding: 120px 20px;
+    float: right;
+    margin-right: 130px;
+  }
+  .landing-r {
+    margin-top: 830px;
+  }
+  .container--footer {
+    width: 100vw !important;
+  }
+  .right-container1 {
+    background-position: bottom;
+  }
+  #aboutme {
+    left: 12%;
+  }
 }
