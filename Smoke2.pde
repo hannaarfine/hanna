@@ -7,7 +7,7 @@ float ease = 0.0022;
 float xc,yc;
 
 void setup(){
-  size(1200, 800);
+  size(screen.width, 600);
   smooth();
   background(255);
   noFill();
