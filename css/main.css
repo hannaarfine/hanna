@@ -19,6 +19,12 @@ body{
   margin-left: 0;
   padding-left: 0;
 }
+
+.container-work2 {
+  max-width: 1000px;
+  margin: 75px auto 0 auto;
+}
+
 .left-container {
   padding-left: 160px !important;
   background: #7AD0E4;
@@ -182,6 +188,11 @@ p {
   color: #000 !important;
 }
 
+.text-bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
 .name_image {
   width: 40%;
 }
@@ -206,6 +217,61 @@ p {
 .section--gray {
   padding: 50px 0;
   background-color: #232323;
+}
+
+.section--lightgray {
+  padding: 85px 0 0 0;
+  background: #7AD0E4;
+}
+
+.section--full {
+  padding: 85px 0 0 0;
+}
+
+.sub--section {
+  max-width: 1100px;
+  margin: auto !important;
+  padding: 80px 0 !important;
+}
+
+.sub--right img{
+  width: 90%;
+  margin-left: 10%;
+}
+
+.sub--left img {
+  width: 90%;
+  margin-right: 10%;
+}
+.sub--section a {
+  background-image: linear-gradient(180deg,transparent 65%,#7AD0E4 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  -webkit-transition: background-size .3s ease;
+  -moz-transition: background-size .3s ease;
+  -ms-transition: background-size .3s ease;
+  -o-transition: background-size .3s ease;
+  transition: background-size .3s ease;
+}
+.sub--section a:hover{
+  background: linear-gradient(180deg, transparent 65%, #7AD0E4 100);
+  color: #2f2f2f !important;
+  background-size: 99% 100%;
+  -webkit-transition: background-size .3s ease;
+  -moz-transition: background-size .3s ease;
+  -ms-transition: background-size .3s ease;
+  -o-transition: background-size .3s ease;
+  transition: background-size .3s ease;
+}
+
+.section--full h2 {
+  font-size: 28px;
+  line-height: 38px;
+  text-align: left;
+  font-weight: normal !important;
+  font-style: italic;
+  margin-bottom: 50px !important;
 }
 
 .dots-right {
@@ -345,26 +411,6 @@ p {
   height: 750px;
 }
 
-/************************
-BUTTONS
-************************/
-#btn-basic {
-  background-color: #fff !important;
-  color: #000;
-  font-family: 'Helvetica Neue', sans-serif;
-  text-transform: uppercase !important;
-  font-size: 14px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  border: none !important;
-  padding: 12px 14px;
-  position: absolute;
-}
-
-btn-basic:hover {
-  background-color: #000;
-  color: #fff !important;
-}
 
 /************************
 HEADING
@@ -743,4 +789,24 @@ nav a:hover {
 /*selected nav links*/
 nav a.selected, nav a:hover{
   color: #000;
+}
+/************************
+BUTTONS
+************************/
+#btn-basic {
+  background-color: #fff !important;
+  color: #000;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-transform: uppercase !important;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border: none !important;
+  padding: 12px 14px;
+  position: absolute;
+}
+
+#btn-basic:hover {
+  background-color: #000 !important;
+  color: #fff !important;
 }
