@@ -368,6 +368,26 @@ p {
   background-color: #7AD0E4;
   transition: background-color 400ms;
 }
+.about-tags {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 100px auto;
+}
+.about-tags h6{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  position: relative;
+  color: #a2aeb6;
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  vertical-align: middle;
+  margin: 0;
+  border: 1px solid rgba(162,174,182,.5);
+  margin: 0 15px;
+}
+
 .up-to {
   padding: 10px 0 10px 35px;
   border-left: 4px solid #7AD0E4;
