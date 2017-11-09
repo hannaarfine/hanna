@@ -3,7 +3,7 @@ float minRad = 0;
 float maxRad = 200;
 float nfTime = 0.005;
 float nfAng = 0.008;
-float ease = 0.0025;
+float ease = 0.0022;
 float xc,yc;
 
 void setup(){
