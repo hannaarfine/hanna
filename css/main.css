@@ -210,6 +210,19 @@ p {
   align-items: center;
 }
 
+.section--contact {
+  padding: 85px 0;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../assets/contact.jpg) no-repeat center;
+  background-size: cover;
+  background-position: top;
+  opacity: .92;
+  margin-bottom: -55px;
+}
+
 .section--white {
   padding: 100px 0;
 }
@@ -732,7 +745,29 @@ p{
 /************************
 PAGE: CONTACT
 ************************/
-
+.contact-sq {
+  width: 400px;
+  background: #fff;
+  padding: 25px !important;
+}
+.contact-sq div{
+  padding-left: 0 !important;
+}
+.contact-sq h2 {
+  text-align: left !important;
+  padding-left: 10px;
+}
+.contact-sq a {
+  border-bottom: 0 !important;
+}
+.contact-sq a:hover {
+  border-bottom: 0 !important;
+}
+.contact-sq h3 {
+  font-size: 22px !important;
+  text-align: center;
+  margin-bottom: 50px !important;
+}
 .contact-info{
   list-style: none;
   padding:0;
