@@ -126,4 +126,15 @@ nav{
   .solid-panel-left {
     display: none;
   }
+  .contact-sq {
+    width: 240px;
+    margin: auto;
+  }
+  #upto3 {
+    margin-bottom: 10px;
+  }
+  .section--contact {
+    background-size: contain;
+    background-repeat: repeat;
+  }
 }
