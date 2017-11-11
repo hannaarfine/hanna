@@ -744,6 +744,9 @@ p{
 .body-section {
   padding: 80px;
 }
+.dmig-body {
+  padding: 20px 80px 0 80px;
+}
 /************************
 PAGE: CONTACT
 ************************/

@@ -99,7 +99,7 @@ nav{
     background-position: bottom;
   }
   #aboutme {
-    left: 12%;
+    left: 10%;
   }
   .content {
     padding: 30px;
@@ -136,5 +136,46 @@ nav{
   .section--contact {
     background-size: contain;
     background-repeat: repeat;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  .sub--left img{
+    box-shadow: none !important;
+    margin-bottom: 20px !important;
+  }
+  .sub--section h2 {
+    font-size: 20px;
+  }
+  .sub--right img {
+    margin-left: 0;
+    box-shadow: none !important;
+  }
+  .section--full {
+    padding: 0;
+  }
+  .work-header a{
+    padding: 25px 30px;
+    font-size: 30px;
+    line-height: 65px;
+  }
+  .work-roles h2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  .dmig-body {
+    padding: 50px;
+  }
+  .content-left {
+    width: 100vw;
+    padding: 20px 0;
+  }
+  #icons {
+    width: 50%;
+  }
+  #icon1 {
+    width: 50%;
+    margin-left: -20px;
   }
 }
