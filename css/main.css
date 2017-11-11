@@ -655,9 +655,7 @@ PAGE: PORTFOLIO
 
 .solid-panel {
   background: #7AD0E4;
-  width: 30.5%;
-  margin-left: 29px !important;
-  padding-left: 0 !important;
+  height: 100%;
 }
 
 .solid-panel h4{
@@ -673,7 +671,7 @@ PAGE: PORTFOLIO
 
 .solid-panel-left {
   background: #7AD0E4;
-  width: 30.5%;
+  width: 29.5%;
   padding-right: 0 !important;
   padding-left: 0 !important;
   margin: 0 0 0 35px !important;
