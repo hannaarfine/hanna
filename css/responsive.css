@@ -57,7 +57,7 @@ nav{
 
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width :667px) {
   #overlay {
     display: none;
   }
@@ -72,7 +72,7 @@ nav{
   .dots {
     background: transparent !important;
     padding: 20px;
-    margin-top: 500px;
+    margin-top: 580px;
   }
   .dots-right {
     background: transparent;
@@ -90,7 +90,7 @@ nav{
     margin-right: 130px;
   }
   .landing-r {
-    margin-top: 830px;
+    margin-top: 930px;
   }
   .container--footer {
     width: 100vw !important;
