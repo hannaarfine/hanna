@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('.hidden').fadeIn(1600).removeClass('hidden');
   $('#epithets').typeIt({
-    strings: ["front end developer.", "UI/UX desiger.", "dog lover.", "front end developer." ],
+    strings: ["front end developer.", "UI/UX designer.", "dog lover.", "front end developer." ],
      speed: 80,
      breakLines: false,
      autoStart: false

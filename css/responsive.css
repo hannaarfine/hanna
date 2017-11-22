@@ -65,7 +65,9 @@ nav{
   #overlayblack {
     display: none;
   }
-
+  .right-container2:hover h3 {
+    visibility: block;
+  }
   .dot-small {
     display: none;
   }
