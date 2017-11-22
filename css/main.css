@@ -644,6 +644,9 @@ PAGE: PORTFOLIO
     padding: 0 !important;
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+    -webkit-backface-visibility: hidden !important;
+    box-sizing: border-box;
+    -webkit-transform-style: preserve-3d;
 }
 
 .work-text {
@@ -661,7 +664,9 @@ PAGE: PORTFOLIO
   -webkit-transform: translateY(-20px);
   transform: translateY(-20px);
   box-shadow: 0 30px 30px lightgrey;
+  -webkit-transform-style: preserve-3d;
 }
+
 #overlay-work {
   opacity: 0;
   position: absolute;
@@ -674,13 +679,17 @@ PAGE: PORTFOLIO
   border-radius: 10px;
   background: rgba(255,255,255,0.95);
   transition: opacity 0.5s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden !important;
 }
 
 .work-panel:hover #overlay-work {
   opacity: 1;
   -webkit-transition: opacity .5s ease;
-
+  -webkit-backface-visibility: hidden !important;
+  -webkit-transform-style: preserve-3d;
 }
+
 
 .work-page {
   width: 80%;
