@@ -6,6 +6,10 @@ body{
   font-family: 'Helvetica Neue', sans-serif;
 }
 
+header {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+}
+
 .container-landing {
   max-width: 900px;
   margin: 75px auto 75px auto;
@@ -23,6 +27,11 @@ body{
 .container-work2 {
   max-width: 1000px;
   margin: 75px auto 0 auto;
+}
+
+.work {
+  max-width: 900px;
+  margin: 75px auto 75px auto;
 }
 
 .left-container {
@@ -629,23 +638,48 @@ PAGE: PORTFOLIO
   padding: 40px;
 }
 
+.work-panel {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px lightgrey;
+    padding: 0 !important;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.work-text {
+  text-align: center;
+  padding: 30px;
+}
+
 .work-image {
-  height: 300px;
   overflow: hidden;
-  border-bottom: 15px solid #7AD0E4;
+  border-radius: 10px 10px 0 0;
 }
 
-.work-image img {
-  max-width: 100%;
-
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.work-panel:hover {
+  -moz-transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+  box-shadow: 0 30px 30px lightgrey;
 }
-.work-image:hover img {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+#overlay-work {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.95);
+  transition: opacity 0.5s;
+}
+
+.work-panel:hover #overlay-work {
+  opacity: 1;
+  -webkit-transition: opacity .5s ease;
+
 }
 
 .work-page {
