@@ -156,6 +156,9 @@ nav{
   .section--full {
     padding: 0;
   }
+  .main-body {
+    padding: 20px;
+  }
   .work-header a{
     padding: 25px 30px;
     font-size: 30px;
