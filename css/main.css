@@ -281,6 +281,7 @@ p {
   margin-right: 10%;
 }
 .sub--section a {
+  padding-left: 0;
   background-image: linear-gradient(180deg, transparent 65%,#7AD0E4 0);
   border-bottom: transparent !important;
   background-size: 0 100%;
@@ -755,7 +756,8 @@ PAGE: PORTFOLIO
 
 .work-roles h2{
   font-weight: 400 !important;
-  font-size: 30px;
+  font-size: 25px;
+  font-style: normal;
   line-height: 40px;
   margin-bottom: 0px !important;
   text-align: left;
@@ -767,6 +769,11 @@ PAGE: PORTFOLIO
   line-height: 28px;
   padding-left: 0 !important;
   font-family: Proxima Nova;
+}
+
+.work-roles h6 {
+  font-family: 'Domine', serif !important;
+  font-style: italic;
 }
 
 .line {
