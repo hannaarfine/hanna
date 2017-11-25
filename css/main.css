@@ -677,6 +677,7 @@ PAGE: PORTFOLIO
     -webkit-backface-visibility: hidden !important;
     box-sizing: border-box;
     -webkit-transform-style: preserve-3d;
+    overflow: hidden;
 }
 
 .work-text {
@@ -910,7 +911,18 @@ PAGE: AP ART GALLERY
 .photos{
   margin: 2.5% 0;
 }
-
+.gallery {
+  max-width: 900px;
+  margin: auto;
+  padding: 180px 0;
+}
+.gallery-pic {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /************************
 COLORS
