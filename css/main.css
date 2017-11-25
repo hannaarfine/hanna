@@ -11,7 +11,7 @@ header {
 }
 
 li {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'Proxima Nova', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   color: #000;
   line-height: 28px;
@@ -779,7 +779,7 @@ PAGE: PORTFOLIO
   font-size: 18px;
   line-height: 28px;
   padding-left: 0 !important;
-  font-family: Proxima Nova;
+  font-family: 'Proxima Nova', 'Helvetica Neue', sans-serif;
 }
 
 .work-roles h6 {
@@ -820,7 +820,7 @@ PAGE: PORTFOLIO
 .work-roles h4 {
   font-weight: normal !important;
   font-size: 18px !important;
-  font-family: 'Proxima Nova' !important;
+  font-family: 'Proxima Nova', 'Helvetica Neue', sans-serif !important;
 }
 
 .role--header {
