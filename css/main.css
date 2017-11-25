@@ -677,7 +677,6 @@ PAGE: PORTFOLIO
     -webkit-backface-visibility: hidden !important;
     box-sizing: border-box;
     -webkit-transform-style: preserve-3d;
-    overflow: hidden;
 }
 
 .work-text {
@@ -923,6 +922,7 @@ PAGE: AP ART GALLERY
   justify-content: center;
   align-items: center;
 }
+
 
 /************************
 COLORS
