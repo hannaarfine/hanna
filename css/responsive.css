@@ -117,7 +117,7 @@ nav{
     margin-top: 30px;
   }
   .work-image {
-    height: 200px;
+    height: 250px;
   }
   .body-section {
     padding: 1px 40px;
@@ -185,5 +185,8 @@ nav{
   }
   .about-tags {
     display: none;
+  }
+  .work-panel {
+    margin-bottom: 40px !important;
   }
 }
