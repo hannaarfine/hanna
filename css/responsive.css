@@ -189,4 +189,7 @@ nav{
   .work-panel {
     margin-bottom: 40px !important;
   }
+  .gray {
+    padding: 25px;
+  }
 }
