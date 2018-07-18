@@ -247,8 +247,8 @@ p {
 .craft {
   position: absolute;
   left: 0;
-  top: 20%;
-  width: 1200px;
+  top: 25%;
+  width: 1160px;
 }
 .craft img {
   width: 85%;
@@ -262,11 +262,17 @@ p {
   float: right;
 }
 .arm {
+  -webkit-transition: all 0.3s ease;
+   -moz-transition: all 0.3s ease;
+  transition: all .3s ease;
   position: absolute;
   top: 60%;
   right: 0;
 }
 .arm img {
+  -webkit-transition: all 0.1s ease;
+   -moz-transition: all 0.1s ease;
+  transition: all .1s ease;
   width: 1300px;
   float: right;
 }
@@ -284,7 +290,7 @@ p {
 
 .blue--container {
   background: #EBF4FA;
-  top: 162vh;
+  top: 158vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -315,7 +321,7 @@ p {
   content: "";
     width: 1px;
     height: 84%;
-    position: absolute;
+    position: relative;
     z-index: 99;
     bottom: 0%;
     left: 50%;
@@ -323,6 +329,12 @@ p {
     background-position: right;
     background-size: 1px 10px;
     background-repeat: repeat-y;
+}
+
+
+#brackets {
+  position: absolute;
+  left: 0;
 }
 
 .section--contact {
@@ -621,6 +633,13 @@ a:hover {
   transition: background-color 400ms;
 }
 
+.arm img:hover {
+  /* -webkit-transition: all 0.1s ease;
+   -moz-transition: all 0.1s ease;
+  transition: all .1s ease;
+  transform: scale(1.02) */
+}
+
 
 
 /************************
@@ -630,7 +649,11 @@ NAVIGATION
 nav {
   text-align: center;
   font-family: 'Amazon Ember', sans-serif;
+  position: fixed;
+  background: rgba(255, 255, 255, .9);
+  top: 0;
 }
+
 
 nav ul{
   list-style: none;

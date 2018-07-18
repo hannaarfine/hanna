@@ -27,8 +27,11 @@ nav{
    float: right;
    text-align: right;
    margin: 0 auto;
-   padding: 20px 110px 15px;
-   width: 78%;
+   padding: 10px 0;
+   width: 98%;
+   position: fixed;
+   background: rgba(255, 255, 255, .9);
+   top: 0;
   }
 
  #logo{
@@ -40,7 +43,7 @@ nav{
 
   h1{
     position: fixed;
-    margin-top: 8% !important;
+    margin-top: 10% !important;
     font-size: 60px !important;
     line-height: 80px !important;
     font-weight: bold !important;

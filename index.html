@@ -63,6 +63,7 @@
 
       <div class="section--hero blue--container">
         <div class="do-title"><h3>Here are a few things I can do </h3></div>
+        <img id="brackets" src='./assets/brackets.svg' alt='brackets'/>
       </div>
 
 
@@ -80,14 +81,23 @@
       $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
         var height = $(window).height();
-        console.log(scrollTop)
-        console.log(height/2.5)
+
         var visibile;
         (scrollTop > 300) ? (visible = false) : (visible = true)
         $('.title').css({
-
             'opacity': (height - scrollTop*4) / (height/2)
         });
+
+        if(scrollTop > 120 && scrollTop < 630) {
+          $('.arm').css({
+            'top': `54%`
+          });
+        }
+        else {
+          $('.arm').css({
+            'top': `60%`
+          });
+        }
       })
 
     </script>
