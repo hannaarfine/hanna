@@ -26,7 +26,7 @@ li {
   position: absolute;
   top: 130%;
   left: 10%;
-  width: 25%;
+  width: 300px;
 }
 .description h2 {
   padding: 0;
@@ -216,7 +216,7 @@ h1 {
 }
 
 h3{
-  font-size: 18px !important;
+  font-size: 16px !important;
   text-transform: uppercase !important;
   font-weight: bold !important;
   color: #000 !important;
@@ -285,7 +285,44 @@ p {
 .blue--container {
   background: #EBF4FA;
   top: 162vh;
-    position: relative;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.blue--container h3{
+  background: #fff;
+    height: 24px;
+    font-weight: 400 !important;
+    padding: 8px 14px;
+}
+
+.do-title::before{
+  content: "";
+    width: 1px;
+    height: 300px;
+    position: absolute;
+    z-index: 99;
+    top: -26%;
+    left: 50%;
+    background-image: linear-gradient(black 33%, rgba(255,255,255,0) 0%);
+    background-position: right;
+    background-size: 1px 10px;
+    background-repeat: repeat-y;
+}
+
+.do-title::after{
+  content: "";
+    width: 1px;
+    height: 84%;
+    position: absolute;
+    z-index: 99;
+    bottom: 0%;
+    left: 50%;
+    background-image: linear-gradient(black 33%, rgba(255,255,255,0) 0%);
+    background-position: right;
+    background-size: 1px 10px;
+    background-repeat: repeat-y;
 }
 
 .section--contact {

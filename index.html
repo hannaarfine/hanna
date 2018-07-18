@@ -53,7 +53,7 @@
         </div>
         <div class="description">
           <h2>Engineering student at Cornell University & </h2>
-          <h2><span id='epithet'></span></h2>
+          <h2><span id='epithets'></span></h2>
         </div>
 
 
@@ -62,6 +62,7 @@
       </div>
 
       <div class="section--hero blue--container">
+        <div class="do-title"><h3>Here are a few things I can do </h3></div>
       </div>
 
 
@@ -78,20 +79,17 @@
     <script >
       $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
+        var height = $(window).height();
+        console.log(scrollTop)
+        console.log(height/2.5)
         var visibile;
         (scrollTop > 300) ? (visible = false) : (visible = true)
         $('.title').css({
-            'opacity': visible ? 1 : 0
+
+            'opacity': (height - scrollTop*4) / (height/2)
         });
       })
 
-      var epithets = ['design technologist intern at Amazon', 'front end engineer', 'UI/UX designer', 'dog enthusiast']
-      
-
-
-
-
-      // = 'design technologist at Amazon'
     </script>
 
   </body>
