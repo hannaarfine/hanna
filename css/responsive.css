@@ -39,7 +39,9 @@ nav{
   }
 
   h1{
-    font-size: 90px !important;
+    position: fixed;
+    margin-top: 8% !important;
+    font-size: 60px !important;
     line-height: 80px !important;
     font-weight: bold !important;
   }
@@ -107,6 +109,7 @@ nav{
     padding: 30px;
   }
   .content h1 {
+    font-family: 'Georgia', serif;
     font-size: 50px;
     font-weight: bold;
   }

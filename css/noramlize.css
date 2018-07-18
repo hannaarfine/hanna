@@ -124,16 +124,16 @@ a:hover {
  */
 
 h1 {
-    font-size: 2em;
+    font-family: 'Georgia', serif;
+    font-size: 70px;
     margin: 0.67em 0;
     color: #000 !important;
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 30px;
     font-weight: bold;
-    font-family: 'Domine', serif;
-    text-align: center;
+    font-family: 'Georgia', serif;
 }
 
 h3 {
