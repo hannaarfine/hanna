@@ -13,12 +13,12 @@
     <title>Hanna | Front End &amp; Design</title>
     <link rel = "stylesheet" href="css/noramlize.css">
     <link rel = "icon" type="image/png" href="assets/ha.png">
-    <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Muli" rel="stylesheet">
     <link rel = "stylesheet" href="css/main.css">
     <link rel = "stylesheet" href="css/responsive.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <link rel = "stlesheet" href="https://cdnjs.com/libraries/uikit">
+    <link rel = "stylesheet" href="https://cdnjs.com/libraries/uikit">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.gradient.css" />
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
@@ -39,7 +39,7 @@
       </nav>
     </header>
 
-    <div >
+  <div class="section">
       <div class="hero--container">
         <div class="title"><h1> Hi, I'm Hanna</h1></div>
         <div class="craft">
@@ -55,23 +55,88 @@
           <h2>Engineering student at Cornell University & </h2>
           <h2><span id='epithets'></span></h2>
         </div>
-
-
       </div>
 
-      </div>
-
-      <div class="section--hero blue--container">
+      <div  class="section--hero blue--container">
         <div class="do-title"><h3>Here are a few things I can do </h3></div>
-        <img id="brackets" src='./assets/brackets.svg' alt='brackets'/>
+        <div class="do-container">
+          <div data-uk-scrollspy="{cls:'uk-animation-fade', delay: 200}" class="brackets">
+            <div class="do-text">
+              <h2> front end <br /> engineering </h2>
+              <p>HTML, CSS, Javascript, React, Redux, jQuery, Python, Java, PHP, Ruby on Rails </p>
+            </div>
+            <img id="brackets" src='./assets/brackets.svg' alt='brackets'/>
+          </div>
+
+          <div data-uk-scrollspy="{cls:'uk-animation-fade', delay: 100}" class="light">
+            <img id="brackets" src='./assets/light.svg' alt='light'/>
+            <div class="do-text">
+              <h2> ui & ux<br /> design </h2>
+              <p>Sketch, Photoshop, Illustrator, InVision, concept design, wireframing </p>
+            </div>
+
+
+          </div>
+
+          <div data-uk-scrollspy="{cls:'uk-animation-fade', delay: 100}" class="box">
+            <div class="do-text">
+              <h2> product <br /> development </h2>
+              <p>Logo design, product identity, vector design </p>
+            </div>
+            <img id="brackets" src='./assets/box.svg' alt='box'/>
+          </div>
+        </div>
+      </div>
       </div>
 
+  <div class="section--hero">
+    <div class="center">
+    <div class="titles">
+      <button id="work" onClick="chooseSection('work')" class="btnActive">Work</button>
+      <button id="projects" onClick="chooseSection('projects')">Projects</button>
+      <button id="fun" onClick="chooseSection('fun')">Fun</button>
+    </div>
+    </div>
+    <div class="panels">
+      <a href="">
+      <div class="panel" id="panel1">
+        <div class="panel_img" style="background-image: url('./assets/amazon-logo.svg'); "></div>
+        <div class="panel_text">
+          <h3> Amazon </h3>
+          <p> Design technology intern at Amazon </p>
+          <h4> Summer 2018 </h4>
+        </div>
+      </div>
+      </a>
 
+    <a href="startuptree.html">
+      <div class="panel" id="panel2">
+        <div class="panel_img" style="background-image: url('./assets/map-header.jpg'); "></div>
+        <div class="panel_text">
+          <h3> StartupTree </h3>
+          <p> Front end engineer and UI/UX designer </p>
+          <h4> Summer 2017 </h4>
+        </div>
+      </div>
+    </a>
 
+      <div class="panel" id="panel3">
+        <div class="panel_img" style="background-image: url('./assets/dmig3.jpg'); "></div>
+        <div class="panel_text">
+          <h3> Dyson Media Innovation Group </h3>
+          <p> Front end engineer and UI/UX designer </p>
+          <h4> Fall 2016 - Present </h4>
+        </div>
+      </div>
 
-      <div data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}" id = "do">
+      <div class="panel" id="panel4">
+        <div class="panel-inside"><img src='./assets/plus.svg' /><p> see all </p></div>
+      </div>
 
     </div>
+    <div class="colorRight">
+    </div>
+  </div>
 
     <footer>
 
@@ -81,8 +146,8 @@
       $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
         var height = $(window).height();
-
         var visibile;
+
         (scrollTop > 300) ? (visible = false) : (visible = true)
         $('.title').css({
             'opacity': (height - scrollTop*4) / (height/2)
@@ -99,6 +164,20 @@
           });
         }
       })
+
+
+      function chooseSection(btnVal){
+        let sections = ['work', 'projects', 'fun']
+
+        sections.forEach(function(element) {
+            if(element != btnVal){
+              document.getElementById(element).className = ""
+            }
+        });
+
+        var current = document.getElementById(btnVal)
+        current.className += "btnActive"
+      }
 
     </script>
 
