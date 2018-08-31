@@ -20,6 +20,7 @@ li {
 .title {
   display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .description {
@@ -457,7 +458,9 @@ p {
   max-width: 225px;
   text-align: right;
 }
-
+.titles {
+  z-index: 5;
+}
 .titles button{
     font-weight: 100;
     background: #fff;
@@ -483,7 +486,7 @@ p {
   width: 70%;
   float: left;
   padding-left: 15%;
-  margin-top: 10%;
+  margin-top: 4%;
   position: absolute;
   flex-wrap: wrap;
 }
@@ -498,6 +501,7 @@ p {
   display: inline-block;
   position: relative;
   transition: all .2s ease-in-out;
+  margin-bottom: 30px;
 }
 .panel:hover {
   box-shadow: 0 14px 18px -6px #00000047;
@@ -547,7 +551,7 @@ a {
 }
 #panel4 {
   height: 375px;
-  top: -115px;
+  top: -110px;
 }
 #panel4 p {
   text-transform: uppercase;
@@ -869,7 +873,7 @@ nav {
   text-align: center;
   font-family: 'Amazon Ember', sans-serif;
   position: fixed;
-  background: rgba(255, 255, 255, .9);
+  background: rgba(255, 255, 255);
   top: 0;
 }
 
@@ -1290,6 +1294,8 @@ a{
 /*nav links*/
 nav a, nav a:visited {
   color: #000;
+  font-size: 12px;
+  font-weight: normal;
 }
 
 nav a:hover {

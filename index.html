@@ -94,38 +94,38 @@
     <div class="titles">
       <button id="work" onClick="chooseSection('work')" class="btnActive">Work</button>
       <button id="projects" onClick="chooseSection('projects')">Projects</button>
-      <button id="fun" onClick="chooseSection('fun')">Fun</button>
+      <!-- <button id="fun" onClick="chooseSection('fun')">Fun</button> -->
     </div>
     </div>
     <div class="panels">
       <a href="">
       <div class="panel" id="panel1">
-        <div class="panel_img" style="background-image: url('./assets/amazon-logo.svg'); "></div>
+        <div class="panel_img" style="background-image: url('./assets/amazon-logo.svg');" id="img_0"></div>
         <div class="panel_text">
-          <h3> Amazon </h3>
-          <p> Design technology intern at Amazon </p>
-          <h4> Summer 2018 </h4>
+          <h3 id="title0"> Amazon </h3>
+          <p id="role0"> Design technology intern at Amazon </p>
+          <h4 id="date0"> Summer 2018 </h4>
         </div>
       </div>
       </a>
 
     <a href="startuptree.html">
       <div class="panel" id="panel2">
-        <div class="panel_img" style="background-image: url('./assets/map-header.jpg'); "></div>
+        <div class="panel_img" style="background-image: url('./assets/map-header.jpg'); " id="img_1"></div>
         <div class="panel_text">
-          <h3> StartupTree </h3>
-          <p> Front end engineer and UI/UX designer </p>
-          <h4> Summer 2017 </h4>
+          <h3 id="title1"> StartupTree </h3>
+          <p id="role1"> Front end engineer and UI/UX designer </p>
+          <h4 id="date1"> Summer 2017 </h4>
         </div>
       </div>
     </a>
 
       <div class="panel" id="panel3">
-        <div class="panel_img" style="background-image: url('./assets/dmig3.jpg'); "></div>
+        <div class="panel_img" style="background-image: url('./assets/dmig3.jpg');" id="img_2"></div>
         <div class="panel_text">
-          <h3> Dyson Media Innovation Group </h3>
-          <p> Front end engineer and UI/UX designer </p>
-          <h4> Fall 2016 - Present </h4>
+          <h3 id="title2"> Dyson Media Innovation Group </h3>
+          <p id="role2"> Front end engineer and UI/UX designer </p>
+          <h4 id="date2"> Fall 2016 - Present </h4>
         </div>
       </div>
 
@@ -143,6 +143,10 @@
     </footer>
 
     <script >
+      $(document).ready(function(){
+          $(this).scrollTop(0);
+      });
+
       $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
         var height = $(window).height();
@@ -165,10 +169,72 @@
         }
       })
 
+      // selecting work sections
+
+      let sections = ['work', 'projects']
+      let work_info = [
+        {
+        'title': 'Amazon',
+        'role': 'Design technology intern at Amazon',
+        'date': 'summer 2018',
+        'img': './assets/amazon-logo.svg'
+        },
+        {
+          'title': 'StartupTree',
+          'role': 'Front end engineer and UI/UX designer',
+          'date': 'summer 2017',
+          'img': './assets/map-header.jpg'
+        },
+        {
+          'title':'Dyson Media Innovation Group',
+          'role': 'Front end engineer and UI/UX designer',
+          'date': 'Fall 2016 - present',
+          'img': './assets/dmig3.jpg'
+        }
+      ]
+
+      let projects_info = [
+        {
+          'title': 'Music Machine',
+          'role': 'Rapid prototyping development',
+          'date': 'Spring 2018',
+          'img': './assets/musicPoster.jpg'
+        },
+
+        {
+          'title': 'Smoke',
+          'role':'Processing development',
+          'date': 'Spring 2017',
+          'img': './assets/smoke.png'
+        },
+        {
+          'title': 'Flourish',
+          'role': 'UX Research and Design',
+          'date': 'Spring 2017',
+          'img': './assets/FlourishLogo.svg'
+        }
+      ]
+
+      let fun_info = [
+        {
+          'title': 'Graphic Design',
+          'role': 'Various projects',
+          'date': ''
+        }
+      ]
+
+      function drawPanels(section){
+        let i=0;
+        section.forEach(function(d) {
+          document.getElementById('title'+i).innerText = d.title
+          document.getElementById('role'+i).innerText = d.role
+          document.getElementById('date'+i).innerText = d.date
+          document.getElementById('img_'+i).style.backgroundImage = 'url('+d.img+')'
+          i++;
+        })
+      }
 
       function chooseSection(btnVal){
-        let sections = ['work', 'projects', 'fun']
-
         sections.forEach(function(element) {
             if(element != btnVal){
               document.getElementById(element).className = ""
@@ -177,7 +243,19 @@
 
         var current = document.getElementById(btnVal)
         current.className += "btnActive"
+
+        if(btnVal === 'projects'){
+          drawPanels(projects_info)
+        }
+        else if (btnVal === 'work') {
+          drawPanels(work_info)
+        }
+        else if (btnVal === 'fun') {
+          drawPanels(fun_info)
+        }
       }
+
+
 
     </script>
 
