@@ -616,6 +616,25 @@ a {
 .section--green {
   background: #ecf5f0;
   margin-top: -332px;
+  text-align: center;
+  height: 70vh;
+}
+.section--green h2 {
+  background: #fff;
+  padding: 5px 10px;
+  display: inline-block;
+}
+.section--green p {
+  margin: 0;
+}
+.timeline {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+  margin-bottom: 8%;
+}
+.timeline_img{
+  max-width: 65%;
 }
 .section--contact {
   padding: 85px 0;
@@ -950,17 +969,6 @@ nav a{
   transition: background-size .2s ease;
 }
 
-nav a:hover {
-  /* background: linear-gradient(180deg, transparent 65%, #000 100);
-  color: #000 !important;
-  background-size: 95% 100%;
-  -webkit-transition: background-size .2s ease;
-  -moz-transition: background-size .2s ease;
-  -ms-transition: background-size .2s ease;
-  -o-transition: background-size .2s ease;
-  transition: background-size .2s ease; */
-}
-
 .work-header a{
   font-size: 38px;
   padding: 25px 60px;
@@ -991,13 +999,30 @@ nav a:hover {
 FOOTER
 ************************/
 
-footer{
-  font-size: 0.75em;
-  text-align: center;
-  clear: both;
-  padding-top: 50px;
+footer {
+  padding: 20px 10px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+footer ul {
+  float: right;
+  padding-bottom: 10px;
 }
 
+footer li{
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 15px;
+}
+footer p {
+  margin: 0;
+}
+footer a {
+  font-size: 12px;
+  font-family: 'Muli', sans-serif !important;
+  color: #3D3D3D !important;
+}
 .container--footer {
   margin: 75px auto 75px auto;
   display: flex;
