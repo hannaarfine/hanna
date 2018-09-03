@@ -23,6 +23,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.gradient.css" />
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
   </head>
 
   <body>
@@ -138,14 +143,48 @@
     </div>
   </div>
 
-    <footer>
+  <div class='section--hero section--white'>
+    <div class='halfLeft'>
+      <img src='./assets/hanna.png'>
+    </div>
+    <div class='halfRight'>
+      <h2> A bit about me... </h2>
+      <div class='bioRight'>
+      <div>
+        <p> I'm a senior in Cornell University's College of Engineering studying Information Science and Computing in the Arts.
+          I like making things that look nice and work well.
 
+          <br><br>
+
+          I interned this past summer as a <a> Design Technologist at Amazon</a>, where I designed, developed, and tested new advertising solutions.
+
+          <br><br>
+
+          I've also spent the past 2 years working with <a> Dyson Media Innovation Group </a> as their lead designer and front end developer. With them,
+          I realized the convergence of two of my lifelong interests: <a> technology &amp; design </a>.
+        </p>
+      </div>
+      <div>
+        <p>
+          Last summer, I joined the team at <a> StartupTree </a>, where I did design and front end engineering.
+          <br><br>
+          A few of my hobbies include <a href='https://vsco.co/harfine/images/1' target="_blank">taking photos</a>, playing music, and traveling.
+          I really like playing outside, especially with my 2 dogs.
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class='section--hero section--green'>
+
+  </div>
+
+    <footer>
     </footer>
 
-    <script >
-      $(document).ready(function(){
-          $(this).scrollTop(0);
-      });
+
+  <script >
 
       $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
@@ -200,7 +239,6 @@
           'date': 'Spring 2018',
           'img': './assets/musicPoster.jpg'
         },
-
         {
           'title': 'Smoke',
           'role':'Processing development',
@@ -255,6 +293,14 @@
         }
       }
 
+      $(document).ready(function(){
+        $('.bioRight').slick({
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 10000,
+          dots: true,
+        });
+      });
 
 
     </script>

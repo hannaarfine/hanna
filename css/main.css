@@ -250,6 +250,30 @@ p {
   padding: 85px 0;
   height: 100vh;
 }
+.section--white {
+  margin-top: 200px;
+}
+.section--white p {
+  text-transform: none;
+  font-size: 14px;
+  padding-left: 0;
+  color: #494949 !important;
+  line-height: 26px;
+}
+.section--white a {
+  color: #494949 !important;
+  background: #ecf5f0 !important;
+  padding: 2px;
+}
+.section--white h2 {
+  padding-left: 50px;
+  margin-bottom: 50px;
+}
+.bioRight {
+  max-width: 75%;
+  border-left: 1px solid #000;
+  padding-left: 50px;
+}
 .craft {
   position: absolute;
   left: 0;
@@ -569,10 +593,30 @@ a {
 }
 .colorRight {
   background: #FBEEE7;
-  height: 150vh;
+  height: 120vh;
   width: 50%;
   float: right;
-  margin-top: 15%;
+  margin-top: 8%;
+}
+.halfLeft {
+  width: 50%;
+  float: left;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+}
+.halfLeft img {
+  max-height: 90%;
+  /* margin-left: 20%; */
+}
+.halfRight {
+  width: 50%;
+  float: right;
+  height: 75vh;
+}
+.section--green {
+  background: #ecf5f0;
+  margin-top: -332px;
 }
 .section--contact {
   padding: 85px 0;
