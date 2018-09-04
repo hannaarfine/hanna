@@ -6,10 +6,6 @@ body{
   font-family: 'Helvetica Neue', sans-serif;
 }
 
-header {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
-}
-
 li {
   font-family: 'Amazon Ember', 'Helvetica Neue', sans-serif;
   font-size: 18px;
@@ -58,9 +54,9 @@ li {
   margin: 75px auto 0 auto;
 }
 
-.work-title h2{
-  font-size: 32px;
-  text-align: left ;
+.work-title h1 {
+  position: relative;
+  font-size: 50px !important;
 }
 
 #art {
@@ -485,6 +481,9 @@ p {
 .titles {
   z-index: 5;
 }
+.work-titles {
+  margin-top: 30px;
+}
 .titles button{
     font-weight: 100;
     background: #fff;
@@ -528,7 +527,7 @@ p {
   margin-bottom: 30px;
 }
 .panel:hover {
-  box-shadow: 0 14px 18px -6px #00000047;
+  box-shadow: 0 10px 25px -2px #00000047;
   border: .5px solid #FBEEE7;
   transition: all .15s ease-in-out;
 }
@@ -576,6 +575,9 @@ a {
 #panel4 {
   height: 375px;
   top: -110px;
+}
+#panel5 {
+  height: 375px;
 }
 #panel4 p {
   text-transform: uppercase;
@@ -956,7 +958,7 @@ nav li{
 }
 
 nav a{
-  padding:0px 10px;
+  padding:5px;
   margin: 0 10px;
   background-image: linear-gradient(180deg,transparent 65%,#7AD0E4 0);
   background-size: 0 100%;
@@ -1022,6 +1024,10 @@ footer a {
   font-size: 12px;
   font-family: 'Muli', sans-serif !important;
   color: #3D3D3D !important;
+  padding: 5px;
+}
+footer a:hover {
+  background: #ecf5f0 !important;
 }
 .container--footer {
   margin: 75px auto 75px auto;
@@ -1232,6 +1238,18 @@ PAGE: PORTFOLIO
   border-bottom: 4px solid #000;
   margin-top: 30px !important;
 }
+
+.work-section .panels{
+  padding: 0;
+  width: 58.1%;
+  margin-top: 10%;
+  padding-left: 5%;
+}
+
+#work-splatter {
+  position: fixed;
+}
+
 /************************
 PAGE: ABOUT
 ************************/
@@ -1245,10 +1263,6 @@ PAGE: ABOUT
 
 p{
  color: #616161;
-}
-
-.body-section {
-  padding: 80px 80px 20px 80px;
 }
 .dmig-body {
   padding: 20px 80px 0 80px;
@@ -1367,7 +1381,7 @@ nav a, nav a:visited {
 }
 
 nav a:hover {
-  border-bottom: 2px solid #9ad2d9;
+  background: #EBF4FA !important;
 }
 
 /*selected nav links*/

@@ -142,15 +142,6 @@ h3 {
     font-family: 'Muli', sans-serif;
 }
 
-h4 {
-    font-family: 'Domine', serif !important;
-    font-size: 22px !important;
-    font-weight: bold !important;
-    text-align: left;
-    color: #000 !important;
-    line-height: 34px !important;
-}
-
 h5 {
     font-size: 1em !important;
     text-transform: uppercase !important;

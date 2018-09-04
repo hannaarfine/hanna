@@ -63,7 +63,7 @@
       <div  class="section--hero blue--container">
         <div class="do-title"><h3>Here are a few things I can do </h3></div>
         <div class="do-container">
-          <div data-uk-scrollspy="{cls:'uk-animation-fade', delay: 200}" class="brackets">
+          <div data-uk-scrollspy="{cls:'uk-animation-fade', delay: 100}" class="brackets">
             <div class="do-text">
               <h2> front end <br /> engineering </h2>
               <p>HTML, CSS, Javascript, React, Redux, jQuery, Python, Java, PHP, Ruby on Rails </p>
@@ -71,7 +71,7 @@
             <img id="brackets" src='./assets/brackets.svg' alt='brackets'/>
           </div>
 
-          <div data-uk-scrollspy="{cls:'uk-animation-fade', delay: 100}" class="light">
+          <div data-uk-scrollspy="{cls:'uk-animation-fade', delay: 180}" class="light">
             <img id="brackets" src='./assets/light.svg' alt='light'/>
             <div class="do-text">
               <h2> ui & ux<br /> design </h2>
@@ -81,7 +81,7 @@
 
           </div>
 
-          <div data-uk-scrollspy="{cls:'uk-animation-fade', delay: 100}" class="box">
+          <div data-uk-scrollspy="{cls:'uk-animation-fade', delay: 150}" class="box">
             <div class="do-text">
               <h2> product <br /> development </h2>
               <p>Logo design, product identity, vector design </p>
@@ -97,11 +97,11 @@
     <div class="titles">
       <button id="work" onClick="chooseSection('work')" class="btnActive">Work</button>
       <button id="projects" onClick="chooseSection('projects')">Projects</button>
-      <!-- <button id="fun" onClick="chooseSection('fun')">Fun</button> -->
+      <button id="fun" onClick="chooseSection('fun')">Fun</button>
     </div>
     </div>
     <div class="panels">
-      <a href="">
+      <a href="amazon.html" id="href0">
       <div class="panel" id="panel1">
         <div class="panel_img" style="background-image: url('./assets/amazon-logo.svg');" id="img_0"></div>
         <div class="panel_text">
@@ -112,7 +112,7 @@
       </div>
       </a>
 
-    <a href="startuptree.html">
+    <a href="startuptree.html" id="href1">
       <div class="panel" id="panel2">
         <div class="panel_img" style="background-image: url('./assets/map-header.jpg'); " id="img_1"></div>
         <div class="panel_text">
@@ -123,6 +123,7 @@
       </div>
     </a>
 
+    <a href="dmig.html" id="href2">
       <div class="panel" id="panel3">
         <div class="panel_img" style="background-image: url('./assets/dmig3.jpg');" id="img_2"></div>
         <div class="panel_text">
@@ -131,10 +132,13 @@
           <h4 id="date2"> Fall 2016 - Present </h4>
         </div>
       </div>
+    </a>
 
-      <div class="panel" id="panel4">
-        <div class="panel-inside"><img src='./assets/plus.svg' /><p> see all </p></div>
-      </div>
+      <a href="work.html">
+        <div class="panel" id="panel4">
+          <div class="panel-inside"><img src='./assets/plus.svg' /><p> see all </p></div>
+        </div>
+      </a>
 
     </div>
     <div class="colorRight">
@@ -184,7 +188,7 @@
 
     <footer>
       <div>
-        <p><strong>Hanna Arfine</strong></p>
+        <a href='index.html'><p><strong>Hanna Arfine</strong></p>
         <p>UI / UX / Front End </p>
       </div>
       <ul>
@@ -219,91 +223,6 @@
           });
         }
       })
-
-      // selecting work sections
-
-      let sections = ['work', 'projects']
-      let work_info = [
-        {
-        'title': 'Amazon',
-        'role': 'Design technology intern at Amazon',
-        'date': 'summer 2018',
-        'img': './assets/amazon-logo.svg'
-        },
-        {
-          'title': 'StartupTree',
-          'role': 'Front end engineer and UI/UX designer',
-          'date': 'summer 2017',
-          'img': './assets/map-header.jpg'
-        },
-        {
-          'title':'Dyson Media Innovation Group',
-          'role': 'Front end engineer and UI/UX designer',
-          'date': 'Fall 2016 - present',
-          'img': './assets/dmig3.jpg'
-        }
-      ]
-
-      let projects_info = [
-        {
-          'title': 'Music Machine',
-          'role': 'Rapid prototyping development',
-          'date': 'Spring 2018',
-          'img': './assets/musicPoster.jpg'
-        },
-        {
-          'title': 'Smoke',
-          'role':'Processing development',
-          'date': 'Spring 2017',
-          'img': './assets/smoke.png'
-        },
-        {
-          'title': 'Flourish',
-          'role': 'UX Research and Design',
-          'date': 'Spring 2017',
-          'img': './assets/FlourishLogo.svg'
-        }
-      ]
-
-      let fun_info = [
-        {
-          'title': 'Graphic Design',
-          'role': 'Various projects',
-          'date': ''
-        }
-      ]
-
-      function drawPanels(section){
-        let i=0;
-        section.forEach(function(d) {
-          document.getElementById('title'+i).innerText = d.title
-          document.getElementById('role'+i).innerText = d.role
-          document.getElementById('date'+i).innerText = d.date
-          document.getElementById('img_'+i).style.backgroundImage = 'url('+d.img+')'
-          i++;
-        })
-      }
-
-      function chooseSection(btnVal){
-        sections.forEach(function(element) {
-            if(element != btnVal){
-              document.getElementById(element).className = ""
-            }
-        });
-
-        var current = document.getElementById(btnVal)
-        current.className += "btnActive"
-
-        if(btnVal === 'projects'){
-          drawPanels(projects_info)
-        }
-        else if (btnVal === 'work') {
-          drawPanels(work_info)
-        }
-        else if (btnVal === 'fun') {
-          drawPanels(fun_info)
-        }
-      }
 
       $(document).ready(function(){
         $('.bioRight').slick({
