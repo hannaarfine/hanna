@@ -1256,6 +1256,10 @@ PAGE: PORTFOLIO
   padding-left: 5%;
 }
 
+.work-section {
+  height: 150vh;
+}
+
 #work-splatter {
   position: fixed;
 }
