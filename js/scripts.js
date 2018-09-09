@@ -66,7 +66,7 @@ let projects_info = [
     'role': 'Rapid prototyping development',
     'date': 'Spring 2018',
     'img': './assets/musicPoster.jpg',
-    'href': 'music.html'
+    'href': 'musicmachine.html'
   },
   {
     'title': 'Smoke',
