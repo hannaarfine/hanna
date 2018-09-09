@@ -241,7 +241,9 @@ p {
 .name_image {
   width: 40%;
 }
-
+.center-image {
+  margin-top: 50px !important;
+}
 .section--hero {
   padding: 85px 0;
   height: 100vh;
@@ -312,6 +314,13 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.no-shadow {
+  box-shadow: none !important;
+}
+
+#amazon--cover  {
+  justify-content: left;
 }
 
 .blue--container {
@@ -679,7 +688,7 @@ a {
 .sub--section {
   max-width: 1100px;
   margin: auto !important;
-  padding: 80px 0 !important;
+  padding: 50px 0 !important;
 }
 
 .sub--section img {
@@ -1201,6 +1210,44 @@ PAGE: PORTFOLIO
 .work-roles h6 {
   font-family: 'Georgia', serif !important;
   font-style: italic;
+}
+
+.work-roles a {
+  font-family: 'Muli', 'Helvetica Neue', sans-serif;
+  background: #EBF4FA !important;
+  padding: 5px;
+  font-weight: 100;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-roles a:hover {
+  font-weight: bold;
+}
+#center-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#tools img {
+  max-width: 600px;
+}
+
+h6 {
+  font-family: 'Georgia', serif !important;
+  font-style: italic;
+  font-size: 14px !important;
+  text-align: center;
 }
 
 .work-roles img {
