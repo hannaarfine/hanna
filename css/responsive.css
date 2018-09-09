@@ -95,8 +95,13 @@ nav{
     font-weight: bold !important;
   }
   .craft {
-    top: 23%;
-    width: 830px;
+    top: 28%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .craft img {
+    width: auto;
+    max-width: 150% !important;
   }
   .blue--container {
     top: 118vh;
@@ -294,8 +299,9 @@ nav{
     font-size: 50px;
     font-weight: bold;
   }
-  body {
+  html, body {
     overflow-x: hidden;
+    max-width: 100%;
   }
   nav ul {
     margin-top: 30px;
