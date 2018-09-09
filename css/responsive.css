@@ -168,6 +168,44 @@ nav{
   .description h2{
     font-size: 20px;
   }
+  .section {
+    height: 240vh;
+  }
+  .titles button {
+    margin: 0 25px;
+  }
+  .titles {
+    margin-top: -40px;
+    padding-bottom: 40px;
+  }
+  .panels {
+    padding-left: 4%;
+  }
+  #panel3 {
+    display: none;
+    visibility: hidden;
+  }
+  #panel4 {
+    display: none;
+    visibility: hidden;
+  }
+  .mobile_hidden {
+    display: none;
+    visibility: hidden;
+  }
+  .section--white {
+    height: 120vh;
+  }
+  .halfLeft {
+    display: none;
+    visibility: hidden;
+  }
+  .halfRight {
+    width: 100%;
+  }
+  .bioRight {
+    border: 0;
+  }
   .arm {
     display: none;
     visibility: hidden;
@@ -178,16 +216,14 @@ nav{
   .right-container2:hover h3 {
     visibility: block;
   }
-  .dot-small {
-    display: none;
+  .timeline_img {
+    max-width: 85%;
   }
-  .dots {
-    background: transparent !important;
-    padding: 20px;
-    margin-top: 580px;
+  .section--green {
+    height: 35vh;
   }
-  .dots-right {
-    background: transparent;
+  .section--green h2 {
+    font-size: 18px;
   }
   .left-container {
     padding: 20px !important;
@@ -204,11 +240,50 @@ nav{
   .landing-r {
     margin-top: 930px;
   }
+  footer ul {
+    width: 30%;
+  }
+  footer li {
+    display: block
+  }
+  footer a {
+    padding: 0;
+  }
   .container--footer {
     width: 100vw !important;
   }
   .right-container1 {
     background-position: bottom;
+  }
+  /************* work page ***************/
+  .work-section .panels {
+    width: 98%;
+  }
+  .work-section #panel3 {
+    display: block;
+    visibility: visible;
+  }
+  #work-titles {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    background: #000;
+    width: 100vw;
+    padding: 25px 30px 30px 25px;
+  }
+  #work-titles-center {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
+  .btnActive {
+    outline: none;
+    border-bottom: 1px solid #fff !important;
+  }
+  .work-titles button {
+    background: #000;
+    color: #fff !important;
   }
   #aboutme {
     left: 10%;
