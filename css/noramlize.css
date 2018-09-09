@@ -124,30 +124,22 @@ a:hover {
  */
 
 h1 {
-    font-size: 2em;
+    font-family: 'Georgia', serif;
+    font-size: 70px;
     margin: 0.67em 0;
     color: #000 !important;
 }
 
 h2 {
-    font-size: 34px;
+    font-size: 30px;
     font-weight: bold;
-    font-family: 'Domine', serif;
-    text-align: center;
+    font-family: 'Georgia', serif;
 }
 
 h3 {
     font-size: 1.17em;
     margin: 1em 0;
-}
-
-h4 {
-    font-family: 'Domine', serif !important;
-    font-size: 22px !important;
-    font-weight: bold !important;
-    text-align: left;
-    color: #000 !important;
-    line-height: 34px !important;
+    font-family: 'Muli', sans-serif;
 }
 
 h5 {
