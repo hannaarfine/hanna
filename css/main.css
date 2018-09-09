@@ -660,6 +660,10 @@ a {
   margin-bottom: -30px;
 }
 
+.section--contact a{
+  color: #000 !important; 
+}
+
 .section--white {
   padding: 100px 0;
 }
