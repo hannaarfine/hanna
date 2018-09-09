@@ -15,6 +15,28 @@
 
 }
 
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .arm {
+    top: 55% !important;
+  }
+  .description {
+    top: 115%;
+  }
+  .blue--container {
+    top: 140vh;
+  }
+  .do-title::before {
+    height: 270px;
+    top: -19%;
+  }
+  .section {
+    height: 265vh;
+  }
+  .section--green {
+    margin-top: -375px;
+  }
+}
+
 @media screen and (min-width: 660px){
 
 
@@ -67,6 +89,89 @@ nav{
     display: none;
   }
 
+  nav {
+    width: 100vw;
+  }
+  h1 {
+    font-family: 'Georgia', serif;
+    font-weight: bold !important;
+  }
+  .craft {
+    top: 23%;
+    width: 830px;
+  }
+  .blue--container {
+    top: 118vh;
+  }
+  .section--hero {
+    padding: 45px 0;
+  }
+  .do-title::before {
+    display: none;
+  }
+  .do-title::after {
+    display: none;
+  }
+  .do-title h3 {
+    font-size: 12px !important;
+  }
+  .brackets {
+    width: 100%;
+    padding: 10px;
+    top: 18%;
+  }
+  .do-text {
+    text-align: left;
+    max-width: 50%;
+  }
+  .do-text h2 {
+    text-align: left;
+    margin: 0;
+    font-size: 16px;
+  }
+  .do-text p {
+    padding-left:  0;
+    font-size: 10px;
+  }
+  #brackets {
+    max-width: 100px;
+  }
+  .brackets::after {
+    display: none;
+  }
+  .light::before {
+    display: none;
+  }
+  .light {
+    width: 100%;
+    top: 46%;
+  }
+  .light img {
+    margin: 0 10%;
+  }
+  .box {
+    width: 100%;
+    top: %;
+  }
+  .box::after{
+    display: none;
+  }
+  .title {
+    position: absolute;
+    top: 45%;
+  }
+  .description {
+    top: 60%;
+    width: 260px;
+    left: auto;
+  }
+  .description h2{
+    font-size: 20px;
+  }
+  .arm {
+    display: none;
+    visibility: hidden;
+  }
   #overlayblack {
     display: none;
   }
