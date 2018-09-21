@@ -86,19 +86,20 @@ let projects_info = [
 
 let fun_info = [
   {
-    'title': 'Graphic Design',
-    'role': 'AP Studio Art',
-    'date': '2013-2015',
-    'img': './assets/brainchem.jpg',
-    'href': 'gallery.html'
-  },
-  {
     'title': 'Photography',
     'role': 'A few photos',
     'date': '2013 - Present',
     'img': './assets/lake.jpg',
     'href': 'https://vsco.co/harfine/images/1'
   },
+  {
+    'title': 'Graphic Design',
+    'role': 'AP Studio Art',
+    'date': '2013-2015',
+    'img': './assets/brainc.jpg',
+    'href': 'gallery.html'
+  },
+
   {'title': 'Laser printing',
     'role': 'Various laser engraving projects',
     'date': 'Spring 2018',
