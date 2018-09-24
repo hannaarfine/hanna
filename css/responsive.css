@@ -54,13 +54,6 @@ nav{
    top: 0;
   }
 
- #logo{
-   float: left;
-    margin-left: 5%;
-    text-align: left;
-    width: 45%;
-  }
-
   h1{
     position: fixed;
     margin-top: 10% !important;
@@ -86,7 +79,14 @@ nav{
   #overlay {
     display: none;
   }
-
+  #logo {
+    display: none;
+    visibility: hidden;
+  }
+  #nav_img {
+    display: none;
+    visibility: hidden;
+  }
   nav {
     width: 100vw;
   }
@@ -304,7 +304,11 @@ nav{
     max-width: 100%;
   }
   nav ul {
-    margin-top: 30px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
+  nav {
+    background: rgba(255, 255, 255, .93)
   }
   .work-image {
     height: 250px;
