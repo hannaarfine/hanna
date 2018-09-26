@@ -92,20 +92,21 @@ let fun_info = [
     'img': './assets/lake.jpg',
     'href': 'https://vsco.co/harfine/images/1'
   },
+  {'title': 'Laser printing',
+    'role': 'Various laser engraving projects',
+    'date': 'Spring 2018',
+    'img':'./assets/laser1.jpg',
+    'href': 'laser.html'
+  },
   {
     'title': 'Graphic Design',
     'role': 'AP Studio Art',
     'date': '2013-2015',
     'img': './assets/brainc.jpg',
     'href': 'gallery.html'
-  },
-
-  {'title': 'Laser printing',
-    'role': 'Various laser engraving projects',
-    'date': 'Spring 2018',
-    'img':'./assets/laser1.jpg',
-    'href': 'laser.html'
   }
+
+  
 ]
 
 function drawPanels(section){
