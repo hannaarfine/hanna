@@ -106,7 +106,7 @@ let fun_info = [
     'href': 'gallery.html'
   }
 
-  
+
 ]
 
 function drawPanels(section){
@@ -152,3 +152,18 @@ function chooseSection(btnVal){
     drawPanels(fun_info)
   }
 }
+
+$(window).scroll(function() {
+  var scrollTop = $(window).scrollTop();
+
+  if(scrollTop > 150){
+    $('.nav').css({
+      'box-shadow': '0 1px 8px rgba(0,0,0,.15)'
+    });
+  }
+  else {
+    $('.nav').css({
+      'box-shadow': 'none'
+    });
+  }
+});

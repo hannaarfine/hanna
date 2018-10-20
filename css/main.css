@@ -15,8 +15,9 @@ li {
 
 .title {
   display: flex;
-    justify-content: center;
-    z-index: 1;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
 }
 
 .description {
@@ -255,6 +256,7 @@ p {
   left: 0;
   top: 25%;
   width: 1160px;
+  z-index: 99;
 }
 .craft img {
   width: 85%;
@@ -274,6 +276,7 @@ p {
   position: absolute;
   top: 60%;
   right: 0;
+  z-index: 100;
 }
 .arm img {
   -webkit-transition: all 0.1s ease;
@@ -305,6 +308,7 @@ p {
   background: #EBF4FA;
   top: 158vh;
   position: relative;
+  z-index: 999;
 }
 
 .blue--container h3{
@@ -956,6 +960,7 @@ nav {
   position: fixed;
   background: rgba(255, 255, 255);
   top: 0;
+  transition: all .3s ease-in-out;
 }
 
 
