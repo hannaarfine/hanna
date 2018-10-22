@@ -634,8 +634,39 @@ a {
   display: flex;
   justify-content: center;
 }
-.halfLeft img {
+#hanna_pic {
   max-height: 90%;
+  z-index: 9;
+  left: 30%;
+  position: relative;
+}
+#bailey {
+  opacity: 0;
+  position: relative;
+  z-index: 0;
+  top: 0%;
+  max-width: 40%;
+  max-height: 40%;
+  left: -300px;
+  top: 260px;
+
+  transition: all .2s ease-in-out;
+}
+#leo {
+  opacity: 0;
+  position: relative;
+  z-index: 0;
+  max-width: 40%;
+  max-height: 40%;
+  right: 65px;
+  top: 260px;
+  transition: all .2s ease-in-out;
+}
+.show_dog {
+  opacity: 1 !important;
+}
+.hide_dog {
+  top: 70% !important;
 }
 .halfRight {
   width: 50%;
@@ -647,6 +678,8 @@ a {
   margin-top: -332px;
   text-align: center;
   height: 70vh;
+  z-index: 99;
+  position: relative;
 }
 .section--green h2 {
   background: #fff;

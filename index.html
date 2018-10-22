@@ -148,7 +148,9 @@
 
   <div class='section--hero section--white'>
     <div class='halfLeft'>
-      <img src='./assets/hanna.png'>
+      <img src='./assets/hanna.png' id="hanna_pic">
+      <img src="./assets/bailey.png" id="bailey" class="hide_dog">
+      <img src="./assets/leo.png" id="leo" class="hide_dog">
     </div>
     <div class='halfRight'>
       <h2> A bit about me... </h2>
@@ -177,7 +179,7 @@
           <a href="http://cornellmedium.design/" target="_blank">medium design collective</a>.
           <br><br>
           A few of my hobbies include <a href='https://vsco.co/harfine/images/1' target="_blank">taking photos</a>, playing &amp; listening to music, and exploring.
-          I really like playing outside, especially with my 2 dogs.
+          I really like playing outside, <a href="" id="dogs">especially with my 2 dogs</a>.
         </p>
       </div>
     </div>
@@ -212,7 +214,6 @@
         var scrollTop = $(window).scrollTop();
         var height = $(window).height();
         var visibile;
-        console.log(scrollTop);
 
         (scrollTop > 300) ? (visible = false) : (visible = true)
         $('.title').css({
@@ -239,6 +240,24 @@
           dots: true,
         });
       });
+
+      $("#dogs").hover (
+        function(){
+          $("#leo").removeClass("hide_dog");
+          $("#bailey").removeClass("hide_dog");
+
+          $("#bailey").addClass("show_dog");
+          $("#leo").addClass("show_dog");
+        },
+        function(){
+          $("#leo").removeClass("show_dog");
+          $("#bailey").removeClass("show_dog");
+
+          $("#leo").addClass("hide_dog");
+          $("#bailey").addClass("hide_dog");
+
+        }
+      );
 
 
     </script>
