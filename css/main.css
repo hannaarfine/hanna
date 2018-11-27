@@ -216,6 +216,16 @@ p {
   display: flex;
   justify-content: center;
 }
+#downloadPNG h6{
+  background: black;
+  color: white;
+}
+
+#downloadPNG h6:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
 
 .name_image {
   width: 40%;
