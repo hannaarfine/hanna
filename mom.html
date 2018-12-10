@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93480337-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-93480337-2');
+    </script>
+    <meta charset="utf-8">
+    <title>Hanna | Front End &amp; Design</title>
+    <link rel = "icon" type="image/png" href="assets/ha.png">
+    <link rel = "stylesheet" href="css/noramlize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Muli" rel="stylesheet">
+    <link rel = "stylesheet" href="css/main.css">
+    <link rel = "stylesheet" href="css/mom.css">
+    <link rel = "stylesheet" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel = "stlesheet" href="https://cdnjs.com/libraries/uikit">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.gradient.css" />
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+    
+
+  <div class="main-body"></div>
+    <div class="center">
+        <h1 id="text" onmouseover="showPics()" onmouseout="hidePics()"></h1>
+      <div class="background">
+      </div>
+    </div>
+    <img class="pic" id="fam" src="assets/family.png" />
+    <img class="pic" id="fam2" src="assets/fam2.jpg" />
+    <img class="pic" id="fam3" src="assets/fam3.jpg" />
+    <img class="pic" id="fam4" src="assets/fam4.jpg" />
+    <img class="pic" id="fam5" src="assets/fam5.jpg" />
+    <img class="pic" id="fam6" src="assets/fam6.jpg" />
+    <img class="pic" id="fam7" src="assets/fam7.jpg" />
+    <img class="pic" id="fam8" src="assets/fam8.jpg" />
+    <img class="pic" id="fam9" src="assets/fam9.jpg" />
+    <img class="pic" id="fam10" src="assets/fam10.jpg" />
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.7/dist/typeit.min.js" ></script>
+  <script>
+    
+    new TypeIt('#text', {
+      strings: ['Happy birthday Mom!'],
+      speed: 50,
+      autoStart: false
+    });
+
+    function showPics() {
+      $('.pic').each(function(){
+        $(this).addClass('show');
+      })
+      $('.background').addClass('hide-text')
+    }
+
+    function hidePics(){
+      $('.pic').each(function(){
+        console.log($(this))
+        $(this).removeClass('show');
+        $('.background').removeClass('hide-text')
+      })
+    }
+  </script>
+
+  </body>
+</html>
+
+
