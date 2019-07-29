@@ -55,9 +55,7 @@ nav{
   }
 
   h1{
-    position: fixed;
-    margin-top: 10% !important;
-    font-size: 60px !important;
+    font-size: 48px !important;
     line-height: 80px !important;
     font-weight: bold !important;
   }
@@ -306,7 +304,7 @@ nav{
   }
   .content h1 {
     font-family: 'Georgia', serif;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
   }
   html, body {

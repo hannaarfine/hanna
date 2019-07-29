@@ -26,11 +26,12 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body id="index_body">
 
     <header style="box-shadow: none !important;">
       <nav class="nav">
@@ -45,19 +46,22 @@
 
   <div class="section">
       <div class="hero--container">
-        <div class="title"><h1> Hi, I'm Hanna</h1></div>
+        <div class="title">
+          <h1> Hi, I'm Hanna</h1>
+          <div id="descriptions">
+            <div class="description-slick">
+                <div> <h2>Design technologist at Amazon</h2></div>
+                <div> <h2 class="strike">Engineering student at Cornell</h2></div>
+            </div>
+            
+          </div>
+         
+        </div>
         <div class="craft">
           <img  src='./assets/craft.png' alt="craft" />
         </div>
-        <div class="splatter">
-          <img src='./assets/splatter.png' />
-        </div>
         <div class="arm">
           <img src='./assets/arm.png' />
-        </div>
-        <div class="description">
-          <h2>Engineering student at Cornell University & incoming design technologist at Amazon.</h2>
-          <!-- <h2><span id='epithets'></span></h2> -->
         </div>
       </div>
 
@@ -137,13 +141,15 @@
 
       <a href="work.html">
         <div class="panel" id="panel4">
-          <div class="panel-inside"><img src='./assets/plus.svg' /><p> see all </p></div>
+          <div class="panel-inside">
+            <div style="text-align: center">
+                <img src='./assets/plus.svg' /><p id="seeall"> see all </p>
+            </div></div>
         </div>
       </a>
 
     </div>
-    <div class="colorRight">
-    </div>
+   
   </div>
 
   <div class='section--hero section--white'>
@@ -238,6 +244,12 @@
           autoplay: true,
           autoplaySpeed: 10000,
           dots: true,
+        });
+        $('.description-slick').slick({
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          dots: false,
         });
       });
 

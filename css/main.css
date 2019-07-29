@@ -5,6 +5,11 @@ GENERAL
 body{
   font-family: 'Helvetica Neue', sans-serif;
 }
+#index_body {
+  background-image: url(../assets/grid.svg);
+  background-position: center;
+ 
+}
 
 li {
   font-family: 'Amazon Ember', 'Helvetica Neue', sans-serif;
@@ -17,7 +22,27 @@ li {
   display: flex;
   justify-content: center;
   z-index: 1;
-  position: relative;
+  position: fixed;
+  margin-top: 10%;
+}
+.strike {
+  text-decoration: line-through;
+}
+
+#descriptions {
+  margin-top: 5.2% !important;
+  position: fixed;
+  width: 40%;
+  text-align: center;
+}
+
+.title h2 {
+    font-family: 'Roboto Mono', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .description {
@@ -57,7 +82,7 @@ li {
 
 .work-title h1 {
   position: relative;
-  font-size: 50px !important;
+  color: #1E1E1E !important;
 }
 
 #art {
@@ -318,17 +343,20 @@ p {
 }
 
 .blue--container {
-  background: #EBF4FA;
+  background: transparent;
   top: 158vh;
   position: relative;
   z-index: 999;
 }
 
 .blue--container h3{
-  background: #fff;
-    height: 24px;
-    font-weight: 400 !important;
-    padding: 8px 14px;
+  background: #222;
+  height: 24px;
+  font-size: 14px !important;
+  color: white !important;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 300 !important;
+  padding: 8px 14px;
 }
 .do-title {
   display: flex;
@@ -384,7 +412,7 @@ p {
 .brackets::after{
   content: "";
   z-index: 100;
-  background: #EBF4FA;
+  background: #fff;
   border: 1px solid #000;
   height: 15px;
   width: 15px;
@@ -422,7 +450,7 @@ p {
 .light::before{
   content: "";
   z-index: 100;
-  background: #EBF4FA;
+  background: #fff;
   border: 1px solid #000;
   height: 15px;
   width: 15px;
@@ -454,7 +482,7 @@ p {
 .box::after{
   content: "";
   z-index: 100;
-  background: #EBF4FA;
+  background: #fff;
   border: 1px solid #000;
   height: 15px;
   width: 15px;
@@ -481,6 +509,9 @@ p {
 .do-text {
   max-width: 225px;
   text-align: right;
+}
+.do-text p {
+  font-family: 'Roboto Mono';
 }
 .titles {
   z-index: 5;
@@ -510,11 +541,14 @@ p {
   color: #000 !important;
 }
 .panels{
-  width: 70%;
-  float: left;
-  padding-left: 15%;
+  /* width: 60%; */
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  /* float: left; */
+  /* padding-left: 15%; */
   margin-top: 4%;
-  position: absolute;
+  /* position: absolute; */
   flex-wrap: wrap;
 }
 
@@ -532,15 +566,17 @@ p {
 .panel {
   background: #fff;
   border: .5px solid #ececec;
-  width: 325px;
+  width: 295px;
   height: 400px;
   margin: 10px;
   box-shadow: 0 12px 18px -6px #00000047;
   z-index: 99;
   display: inline-block;
   position: relative;
+  border-radius: 15px;
   transition: all .2s ease-in-out;
   margin-bottom: 30px;
+  text-align: left;
 }
 .gallery-panel {
   width: 230px;
@@ -576,7 +612,7 @@ a {
   border: none !important;
 }
 .panel h3 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Georgia', sans-serif;
   font-size: 20px !important;
   text-transform: none !important;
   letter-spacing: 0;
@@ -585,16 +621,23 @@ a {
 .panel p {
   margin: 0;
   padding: 0;
+  font-size: 13px;
   text-transform: none;
-  color: #515151 !important;
+  color: #818181 !important;
+}
+#seeall {
+  font-family: 'Roboto Mono', sans-serif;
+  text-transform: none !important;
+  color: #1E1E1E !important;
+  font-weight: 300;
 }
 .panel h4 {
-  font-family: 'Muli', sans-serif !important;
-  font-weight: 100;
+  font-family: 'Roboto Mono', sans-serif !important;
+  font-weight: 300;
   text-transform: uppercase;
   font-size: 12px !important;
-  letter-spacing: 1px;
-  color: #515151 !important;
+  letter-spacing: 2px;
+  color: #818181 !important;
   padding: 0;
   margin: 0;
   position: absolute;
@@ -605,6 +648,7 @@ a {
   height: 50%;
   background-size: cover;
   background-position: center;
+  border-radius: 15px 15px 0 0;
 }
 .panel_text {
   padding: 30px;
@@ -624,8 +668,8 @@ a {
   letter-spacing: 2px;
 }
 #panel4 img {
-  width: 15px;
-  margin-right: 10px;
+  width: 20px;
+  margin-bottom: 8px;
 }
 .panel-inside {
   display: flex;
