@@ -118,7 +118,30 @@
 {
     margin-bottom: 30px;
 }
-
+.panels-slick .slick-dots {
+    top: -90px;
+    max-height: 80px;
+    z-index: 999;
+}
+.panels-slick .slick-dots li {
+    width: auto;
+    margin: 0px 9%;
+}
+.panels-slick .slick-active .pager__item {
+    border-bottom: 1px solid black !important;
+    color: black !important;
+}
+.panels-slick .pager__item {
+    font-weight: 100;
+    background: #fff !important;
+    color: #adadad;
+    font-family: 'Muli', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    border: none;
+    padding: 6px 1px;
+}
 .slick-dots
 {
     position: absolute;
