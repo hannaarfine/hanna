@@ -680,6 +680,9 @@ a {
     justify-content: center;
     align-items: center;
 }
+.panel-inside img {
+  display: inline-block !important;
+}
 .colorRight {
   background: #FBEEE7;
   height: 120vh;
