@@ -5,10 +5,9 @@ GENERAL
 body{
   font-family: 'Helvetica Neue', sans-serif;
 }
-#index_body {
+.grid_body {
   background-image: url(../assets/grid.svg);
   background-position: center;
- 
 }
 
 li {
@@ -238,7 +237,7 @@ p {
   color: #000 !important;
 }
 .section {
-  height: 290vh;
+  height: 165vh;
 }
 .text-bottom {
   display: flex;
@@ -286,8 +285,18 @@ p {
 }
 .bioRight {
   max-width: 75%;
-  border-left: 1px solid #000;
+  /* border-left: 1px solid #000; */
   padding-left: 50px;
+}
+.bioRight p {
+  padding-top: 5%;
+  text-transform: none;
+  font-size: 16px;
+  padding-left: 0;
+  font-family: 'Georgia';
+  font-weight: 100;
+  line-height: 30px;
+  letter-spacing: 0.1px;
 }
 .craft {
   position: absolute;
@@ -348,8 +357,10 @@ p {
   position: relative;
   z-index: 999;
 }
-
-.blue--container h3{
+#worktitle {
+  margin-bottom: 15%;
+}
+.do-title h3{
   background: #222;
   height: 24px;
   font-size: 14px !important;
@@ -363,7 +374,18 @@ p {
     justify-content: center;
     width: 100%;
 }
-.do-title::before{
+#abouttitle {
+  background: #222;
+  height: 24px;
+  font-size: 14px !important;
+  color: white !important;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 300 !important;
+  padding: 8px 14px;
+  display: inline-block;
+  margin-left: 50px;
+}
+#dotitle::before{
   content: "";
     width: 1px;
     height: 300px;
@@ -377,7 +399,7 @@ p {
     background-repeat: repeat-y;
 }
 
-.do-title::after{
+#dotitle::after{
   content: "";
     width: 1px;
     height: 90%;
@@ -541,14 +563,9 @@ p {
   color: #000 !important;
 }
 .panels{
-  /* width: 60%; */
   max-width: 800px;
   margin: auto;
   text-align: center;
-  /* float: left; */
-  /* padding-left: 15%; */
-  margin-top: 4%;
-  /* position: absolute; */
   flex-wrap: wrap;
 }
 
@@ -568,15 +585,16 @@ p {
   border: .5px solid #ececec;
   width: 295px;
   height: 400px;
-  margin: 10px;
+  /* margin: 10px; */
   box-shadow: 0 12px 18px -6px #00000047;
   z-index: 99;
   display: inline-block;
   position: relative;
   border-radius: 15px;
   transition: all .2s ease-in-out;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   text-align: left;
+  transform: scale(.9);
 }
 .gallery-panel {
   width: 230px;
@@ -613,13 +631,15 @@ a {
 }
 .panel h3 {
   font-family: 'Georgia', sans-serif;
-  font-size: 20px !important;
+  font-size: 22px !important;
   text-transform: none !important;
   letter-spacing: 0;
   font-weight: bold !important;
 }
 .panel p {
   margin: 0;
+  font-size: 14px;
+  line-height: 22px !important;
   padding: 0;
   line-height: 18px;
   text-transform: none;
@@ -638,7 +658,7 @@ a {
   font-family: 'Roboto Mono', sans-serif !important;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 12px !important;
+  font-size: 14px !important;
   letter-spacing: 2px;
   color: #818181 !important;
   padding: 0;
@@ -1398,7 +1418,6 @@ h6 {
   padding: 0;
   width: 58.1%;
   margin-top: 10%;
-  padding-left: 5%;
 }
 
 .work-section {
