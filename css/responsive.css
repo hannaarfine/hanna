@@ -111,9 +111,9 @@ nav{
     width: auto;
     max-width: 150% !important;
   }
-  .blue--container {
+  /* .blue--container {
     top: 118vh;
-  }
+  } */
   .section--hero {
     padding: 45px 0;
   }

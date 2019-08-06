@@ -297,6 +297,7 @@ p {
   font-weight: 100;
   line-height: 30px;
   letter-spacing: 0.1px;
+  z-index: 999;
 }
 .craft {
   position: absolute;
@@ -353,9 +354,10 @@ p {
 
 .blue--container {
   background: transparent;
-  top: 158vh;
+  /* top: 158vh; */
   position: relative;
   z-index: 999;
+  margin-bottom: 12%;
 }
 #worktitle {
   margin-bottom: 15%;
@@ -388,10 +390,10 @@ p {
 #dotitle::before{
   content: "";
     width: 1px;
-    height: 300px;
+    height: 80px;
     position: absolute;
     z-index: 99;
-    top: -26%;
+    top: 0%;
     left: 50%;
     background-image: linear-gradient(black 33%, rgba(255,255,255,0) 0%);
     background-position: right;
@@ -731,7 +733,7 @@ a {
   max-width: 40%;
   max-height: 40%;
   left: -300px;
-  top: 260px;
+  top: 266px;
 
   transition: all .2s ease-in-out;
 }
@@ -742,7 +744,7 @@ a {
   max-width: 40%;
   max-height: 40%;
   right: 65px;
-  top: 260px;
+  top: 266px;
   transition: all .2s ease-in-out;
 }
 .show_dog {
@@ -757,17 +759,23 @@ a {
   height: 75vh;
 }
 .section--green {
-  background: #ecf5f0;
-  margin-top: -332px;
+  background: #1D1D1d;
   text-align: center;
-  height: 70vh;
+  height: 50vh;
   z-index: 99;
   position: relative;
 }
 .section--green h2 {
   background: #fff;
-  padding: 5px 10px;
   display: inline-block;
+  font-family: 'Roboto Mono', sans-serif !important;
+  text-transform: uppercase;
+  padding: 12px 40px 18px;
+  height: 24px;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  font-style: normal !important;
 }
 .section--green p {
   margin: 0;
@@ -799,7 +807,9 @@ a {
 }
 
 .section--white {
-  padding: 100px 0;
+  padding: 150px 0 0 0;
+  border-bottom: 8px solid #ECF5F0;
+  height: 67.6vh;
 }
 
 .section--gray {
@@ -1107,6 +1117,7 @@ nav a{
   -ms-transition: background-size .2s ease;
   -o-transition: background-size .2s ease;
   transition: background-size .2s ease;
+  font-weight: 400 !important;
 }
 
 .work-header a{
@@ -1571,7 +1582,8 @@ nav a, nav a:visited {
 }
 
 nav a:hover {
-  background: #EBF4FA !important;
+  /* background: #EBF4FA !important; */
+  border-bottom: 1px solid #222 !important;
 }
 
 /*selected nav links*/
