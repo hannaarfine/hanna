@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93480337-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-93480337-2');
+    </script>
+    <meta charset="utf-8">
+    <title>Hanna | Front End &amp; Design</title>
+    <link rel = "icon" type="image/png" href="assets/ha.png">
+    <link rel = "stylesheet" href="css/noramlize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Muli" rel="stylesheet">
+    <link rel = "stylesheet" href="css/main.css">
+    <link rel = "stylesheet" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel = "stlesheet" href="https://cdnjs.com/libraries/uikit">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.gradient.css" />
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+
+    <header>
+      <nav class="nav">
+        <a href="index.html" id="logo"><img id="nav_img" src="assets/ha.png" /></a>
+        <ul>
+          <li><a href="index.html#bio">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <div class="main">
+    <div class="main-title">
+      <h1>Urban Gems</h1>
+      <h2>Worked with team of 4 to build a park and public space recommendation system driven by natural language processing and machine learning techniques.</h2>
+    </div>
+    <div class="section--cover" style="background: url(assets/urban-cover.png) no-repeat center; background-size: cover;">
+      <table>
+        <tr>
+          <td class="label" valign="top">Type</td><td>School project | <a href="https://classes.cornell.edu/browse/roster/SP19/class/INFO/4300", target="_blank">Cornell University</a></td>
+        </tr>
+        <tr>
+          <td class="label"  valign="top">Concepts</td><td>Sentiment analysis, SVD, Cosine similarity, edit distance</td>
+        </tr>
+        <tr>
+            <td class="label"  valign="top">Tools</td><td>Flask, Javascript</td>
+          </tr>
+      </table>
+    </div>
+    <div class="main-subtitle">
+      <h3>Spring 2018</h3>
+    </div>
+    <div class="main-content">
+        <p><a href="https://urban-gems-final.herokuapp.com/" target="_blank" id="urban">Urban Gems</a> is an information retrieval application that recommends parks, gardens and POPS (Privately Owned Public Spaces) in New York City based on custom user input. 
+          We gathered a dataset consisting of thousands of reviews from Google Maps, the 
+          <a href="https://apops.mas.org/" target="_blank">Advocates for POPS site</a>,
+          and Wikipedia to inform our system of recommendations for the 112 POPS and 122 parks in New York. <br><br>
+          Users can search by selecting which neighborhoods of New York they want to explore and defining key features they're interested in.
+          <a href="https://urban-gems-final.herokuapp.com/" target="_blank" id="urban">Give it a try here!</a>
+        </p>
+
+        <h2>The interface</h2>
+     
+        <div class="uk-grid sub--section">
+            <div class="uk-width-medium-1-2">
+              <img src = "assets/ug1.png">
+            </div>
+            <div class="uk-width-medium-1-2">
+              <img src = "assets/ug2.png">
+            </div>
+            <div class="uk-width-medium-1-1"><br><br></div>
+            <div class="uk-width-medium-1-2">
+                <img src = "assets/ug3.png">
+              </div>
+              <div class="uk-width-medium-1-2">
+                <img src = "assets/ug4.png">
+              </div>
+        </div>
+        <br><br>
+        <p>
+          My main role in this project was to handle all design and frontend components. 
+          I created and refined a series of mockups in Sketch, then implemented in interface using Flask and jQuery.
+          <br><br>
+          The interface allows users to search by specific parameters or search parks similar to their favorite hangouts.
+          It then returns the top 10 matches along with photos, reviews, map, and similarity score explaining the match.
+        </p>
+
+        <div  class="section--hero blue--container urban-timeline">
+            <div class="do-title" id="dotitle"><h3>Behind the scenes </h3></div>
+            <div class="do-container">
+              <div class="brackets">
+                <div class="do-text ">
+                  <h2 class="right"> Data gathering </h2>
+                  <p class="right">Our initial data scrape yielded thousands of reviews from Google Maps, <a href="https://apops.mas.org/" target="_blank">APOPS,</a>
+                    and <a href="https://www.nycgovparks.org/parks/" target="_blank">NYC Parks</a> as well as the Wikipedia descriptions of each of the parks listed by NYC Planning on their database.
+                    
+                  </p>
+                </div>
+              </div>
+    
+              <div class="light">
+                <div class="do-text left">
+                  <h2> Preprocessing </h2>
+                  <p> My groupmates used a python notebook to tokenize the reviews and create a dictionary mapping outdoor features to summary, which is stored in the applicaiton as a CSV.
+                    We generate a good types matrix of relevant words that users can use as search terms.
+                  </p>
+                </div>
+    
+    
+              </div>
+    
+              <div class="box">
+                <div class="do-text right">
+                  <h2 class="right"> Analysis </h2>
+                  <p class="right">Upon entering the relevant search terms and area, the application takes into account the desired region and similarity to query 
+                    based upon cosine similarity, sentiment analysis, SVD analysis, and edit distance. It returns a list of weighted similarities
+                  and shows the user to top 10 most relevant parks. </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="uk-grid sub--section">
+            <div class="uk-width-medium-1-1">
+              <img src = "assets/ug6.png">
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="section--full" data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}">
+      <div class="container-work2 about-tags">
+        <h6>Python</h6>
+        <h6>Flask</h6>
+        <h6>Javascript</h6>
+        <h6>Natural Language Processing</h6>
+        <h6>Machine Learning</h6>
+      </div>
+    </div>
+</div>
+</div>
+
+
+  <footer class="footer-dark">
+    <div>
+      <p><strong>Hanna Arfine</strong></p>
+      <p>UI / UX / Front End </p>
+    </div>
+    <ul>
+      <li><a href="mailto:ha264@cornell.edu">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/hanna-arfine-02b42b129/", target="_blank">Linkedin</a></li>
+    </ul>
+
+  </footer>
+
+</body>
+</html>

@@ -87,7 +87,13 @@ li {
 #art {
   margin-bottom: 100px;
 }
-
+#urban {
+  background: yellow !important;
+  color: #222 !important;
+}
+#urban:hover {
+  text-decoration: underline !important;
+}
 .left-container {
   padding-left: 10% !important;
   background: #7AD0E4;
@@ -409,10 +415,10 @@ table, th, td {
   margin: auto;
   color: #222;
   text-transform: none;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 33px;
   font-weight: 100 !important;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding-bottom: 8%;
 }
 .main-content h2 {
@@ -598,18 +604,57 @@ table, th, td {
 .do-container  {
   width: 100%;
 }
-
+#flourish-main img {
+  border: 1px solid black;
+  padding: 2%;
+  box-shadow: 0 6px 11px rgba(0, 0, 0, 0.17);
+}
 .center {
   display: flex;
   justify-content: center;
 }
-
+.width-4-5 {
+  max-width: 80% !important;
+}
+.width-3-5 {
+  max-width: 60% !important;
+  margin: auto !important;
+}
 .do-text {
   max-width: 225px;
   text-align: right;
 }
 .do-text p {
   font-family: 'Roboto Mono';
+}
+.urban-timeline .do-text {
+  max-width: 305px;
+  padding: 0 8%;
+}
+.right {
+  text-align: right !important;
+  float: right !important;
+  margin-right: 0 !important;
+}
+}
+.left {
+  text-align: left !important;
+  float: left !important;
+  margin-left: 0 !important;
+}
+.urban-timeline .do-text h2 {
+  max-width: 100%;
+  float: left;
+  text-align: left;
+  margin-left: 0;
+}
+.urban-timeline .do-text p {
+  font-size: 12px;
+  float: left;
+  line-height: 17px;
+  text-align: left;
+  padding: 0;
+  max-width: 100%;
 }
 .titles {
   z-index: 5;
@@ -1472,10 +1517,11 @@ PAGE: PORTFOLIO
 }
 
 h6 {
-  font-family: 'Georgia', serif !important;
-  font-style: italic;
-  font-size: 14px !important;
-  text-align: center;
+  font-style: normal;
+    text-align: left;
+    font-family: 'Roboto Mono' !important;
+    font-size: 12px !important;
+    font-weight: 800 !important;
 }
 
 .work-roles img {
