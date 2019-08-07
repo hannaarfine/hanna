@@ -26,11 +26,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.gradient.css" />
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
     <script type="text/javascript" src="processing.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i&display=swap" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
-  <body>
+  <!-- <body>
 
     <header>
       <nav class="nav">
@@ -99,7 +100,79 @@
 
     </footer>
 
-  </body>
+  </body> -->
+
+  <body>
+
+    <header>
+      <nav class="nav">
+        <a href="index.html" id="logo"><img id="nav_img" src="assets/ha.png" /></a>
+        <ul>
+          <li><a href="index.html#bio">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <div class="main">
+    <div class="main-title">
+      <h1>Smoke</h1>
+      <h2>Developed interactive design for Design Programming class at University of Sydney.</h2>
+    </div>
+    <div class="section--cover" style="background: url(assets/smoke.png) no-repeat center; background-size: cover;">
+      <table>
+        <tr>
+          <td class="label" valign="top">Type</td><td>School project | University of Sydney</td>
+        </tr>
+        <tr>
+          <td class="label"  valign="top">Role</td><td>Developer</td>
+        </tr>
+        <tr>
+            <td class="label"  valign="top">Language</td><td>Processing (Java-based)</td>
+          </tr>
+      </table>
+    </div>
+    <div class="main-subtitle">
+      <h3>Spring 2017</h3>
+    </div>
+    <div class="main-content">
+        <p>Move your mouse to make some cool art, and feel free to save if you like how it turns out!
+        </p>
+
+        <div class="section--total">
+          <canvas data-processing-sources="Smoke2.pde" style="margin-top: 0px; height: 80%;" id="smoke2"></canvas>
+      </div>
+  
+      <div class="section--full" data-uk-scrollspy="{cls:'uk-animation-fade', delay:10}" style="padding-top: 30px">
+        <div class="container-work2 about-tags">
+          <div id="saveDesign"><a id="downloadPNG" href="" download="hanna-smoke-design.png"><h6>Save My Design</h6></a></div>
+        </div>
+      </div>
+        
+    </div>
+    <div class="section--full" data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}">
+      <div class="container-work2 about-tags">
+        <h6>Processing</h6>
+      </div>
+    </div>
+</div>
+</div>
+
+
+  <footer class="footer-dark">
+    <div>
+      <p><strong>Hanna Arfine</strong></p>
+      <p>UI / UX / Front End </p>
+    </div>
+    <ul>
+      <li><a href="mailto:ha264@cornell.edu">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/hanna-arfine-02b42b129/", target="_blank">Linkedin</a></li>
+    </ul>
+
+  </footer>
+
+</body>
 
   <script>
     $("#saveDesign").click(function(){

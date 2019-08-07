@@ -23,8 +23,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.gradient.css" />
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i&display=swap" rel="stylesheet">
   </head>
-
+  
   <body>
 
     <header>
@@ -38,61 +39,46 @@
       </nav>
     </header>
 
-  <div data-uk-scrollspy="{cls:'uk-animation-fade', delay: 100}" class="section--cover" style="background: url(assets/musicPoster.jpg), no-repeat center; background-size: cover;">
-    <h2 class="work-header"><a href=#>Music Machine</a></h2>
-  </div>
+  <div class="main">
+    <div class="main-title">
+      <h1>Music Machine</h1>
+      <h2>Worked with team of 3 to build a marble-dropping music machine that plays back songs based on analog user input.</h2>
+    </div>
+    <div class="section--cover" style="background: url(assets/musicPoster.jpg) no-repeat center; background-size: cover;">
+      <table>
+        <tr>
+          <td class="label" valign="top">Type</td><td>School project | <a href="http://courses.cornell.edu/preview_course_nopop.php?catoid=31&coid=492328", target="_blank">Cornell University</a></td>
+        </tr>
+        <tr>
+          <td class="label"  valign="top">Process</td><td>Concepting, Wireframing, Design, Prototyping</td>
+        </tr>
+        <tr>
+            <td class="label"  valign="top">Tools</td><td>Arduino, 3D Printing, Laser Cutting</td>
+          </tr>
+      </table>
+    </div>
+    <div class="main-subtitle">
+      <h3>Spring 2018</h3>
+    </div>
+    <div class="main-content">
+        <p>Over the course of a semester, Kyler Ruvane, Eric Gendreau and I were tasked with building a complex rapid prototyping project using Arduino,
+          3D printing, and laser cutting. In response, we made a music machine that drops marbles onto a xylophone. It reads hand-drawn input from a grid of notes,
+        then plays the corresponding tune.
+        </p>
 
-  <div data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}" class="main-body">
-    <div class="container-work2">
-
-      <div class="work-roles uk-grid">
-        <div class="uk-width-medium-1-1" style="margin: -20px 0 50px;">
-          <span class="sub--section"><a href="work.html"><img src="assets/chevron-left.svg" style="height: 20px; margin-top: -2px; box-shadow: none !important;"><h5 style="display: inline;">Work</h5></a></span>
+        <div class="uk-grid center">
+        <div class="section--full" style="margin-bottom: 10%;">
+          <div class="uk-width-medium-1-1">
+            <img src="assets/musicPoster.jpg" />
+          </div>
         </div>
-        <div class="uk-width-1-2">
-          <span class="sub--section"><h2><a href=#>Music Machine</a></h2></span>
-          <h5>Rapid Prototyping</h5>
-
-        </div>
-        <div class="uk-width-medium-1-2">
-          <p><span style="font-weight: bold">Type: </span> School Project | <a href="http://courses.cornell.edu/preview_course_nopop.php?catoid=31&coid=492328", target="_blank"><span style="color: #aaa;">Cornell University</span></a></p>
-          <p><span style="font-weight: bold">Process: </span>Concepting, Wireframing, Design, Prototyping</p>
-          <p><span style="font-weight: bold">Tools: </span>Arduino, 3D Printing, Laser Cutting</p>
-          <h4>Worked with team of 3 to build a marble-dropping music machine that plays back songs based on analog user input.</h4>
-          <h3>Spring 2018</h3>
+        
+        <div class="uk-width-medium-1-1 center">
+          <iframe width="900" height="500" src="https://www.youtube.com/embed/mTrDn5gDqU4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
+        
     </div>
-  </div>
-
-<div class="gray">
-    <div class="section--full" data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}">
-      <div class="uk-grid work-roles">
-        <div class="uk-width-medium-1-2">
-          <h2>Context</h2>
-        </div>
-        <div class="uk-width-medium-1-2">
-          <h4>Over the course of a semester, Kyler Ruvane, Eric Gendreau and I were tasked with building a complex rapid prototyping project using Arduino,
-            3D printing, and laser cutting. In response, we made a music machine that drops marbles onto a xylophone. It reads hand-drawn input from a grid of notes,
-          then plays the corresponding tune.</h4>
-        </div>
-
-    </div>
-    </div>
-
-    <div class="section--full" data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}">
-      <div class="uk-width-medium-1-1">
-        <img src="assets/musicPoster.jpg" />
-      </div>
-    </div>
-
-    <div class="section--full" data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}">
-    <div class="uk-width-medium-1-1 center">
-      <iframe width="900" height="500" src="https://www.youtube.com/embed/mTrDn5gDqU4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-  </div>
-
-
     <div class="section--full" data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}">
       <div class="container-work2 about-tags">
         <h6>Arduino</h6>
@@ -101,22 +87,20 @@
       </div>
     </div>
 </div>
+</div>
 
 
+  <footer class="footer-dark">
+    <div>
+      <p><strong>Hanna Arfine</strong></p>
+      <p>UI / UX / Front End </p>
+    </div>
+    <ul>
+      <li><a href="mailto:ha264@cornell.edu">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/hanna-arfine-02b42b129/", target="_blank">Linkedin</a></li>
+    </ul>
 
+  </footer>
 
-<footer>
-  <div>
-    <p><strong>Hanna Arfine</strong></p>
-    <p>UI / UX / Front End </p>
-  </div>
-  <ul>
-    <li><a href="mailto:ha264@cornell.edu">Email</a></li>
-      
-    <li><a href="https://www.linkedin.com/in/hanna-arfine-02b42b129/", target="_blank">Linkedin</a></li>
-  </ul>
-
-</footer>
-
-  </body>
+</body>
 </html>

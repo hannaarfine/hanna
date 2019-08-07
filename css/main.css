@@ -339,7 +339,7 @@ p {
 }
 .section--cover {
   /* padding: 85px 0; */
-  height: 70vh;
+  height: 75vh;
   display: flex;
   align-items: flex-end;
 }
@@ -349,7 +349,7 @@ p {
 .main {
   max-width: 90%;
   margin: auto;
-  padding-top: 65px;
+  padding-top: 70px;
   
 }
 .main-title {
@@ -361,6 +361,8 @@ p {
 .main-title h1 {
   font-family: 'Georgia', serif !important;
   font-size: 38px !important;
+  line-height: 42px !important;
+  max-width: 45%;
   letter-spacing: .2px !important;
   color: #222 !important;
   font-style: normal !important;
@@ -368,8 +370,8 @@ p {
 }
 .main-title h2 {
   font-family: 'Georgia', serif !important;
-  font-size: 15px !important;
-  line-height: 22px !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
   font-weight: 100 !important;
   font-style: normal !important;
   max-width: 25%;
@@ -380,6 +382,7 @@ table {
   border-collapse: collapse;
   position: absolute;
   right: 9%;
+  max-width: 340px;
 }
 
 table, th, td {
