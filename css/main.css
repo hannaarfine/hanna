@@ -338,16 +338,87 @@ p {
   justify-content: center;
 }
 .section--cover {
-  padding: 85px 0;
-  height: 100vh;
+  /* padding: 85px 0; */
+  height: 70vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 .no-shadow {
   box-shadow: none !important;
 }
+.main {
+  max-width: 90%;
+  margin: auto;
+  padding-top: 65px;
+  
+}
+.main-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1%;
+}
+.main-title h1 {
+  font-family: 'Georgia', serif !important;
+  font-size: 38px !important;
+  letter-spacing: .2px !important;
+  color: #222 !important;
+  font-style: normal !important;
+  font-weight: 100 !important;
+}
+.main-title h2 {
+  font-family: 'Georgia', serif !important;
+  font-size: 15px !important;
+  line-height: 22px !important;
+  font-weight: 100 !important;
+  font-style: normal !important;
+  max-width: 25%;
+  text-align: right;
+}
 
+table {
+  border-collapse: collapse;
+  position: absolute;
+  right: 9%;
+}
+
+table, th, td {
+  border: 1px solid #222;
+  background: white;
+  font-family: 'Roboto Mono', sans-serif;
+  color: #222;
+  padding: 7px;
+  font-size: 12px;
+}
+.label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.main-subtitle h3{
+  text-align: center;
+  font-family: 'Roboto Mono';
+  font-size: 12px !important;
+  opacity: 0.6;
+  padding: 4%;
+}
+.main-content p{
+  max-width: 50%;
+  margin: auto;
+  color: #222;
+  text-transform: none;
+  font-size: 15px;
+  line-height: 33px;
+  font-weight: 100 !important;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-bottom: 8%;
+}
+.main-content h2 {
+  font-family: 'Roboto Mono' !important;
+  font-style: normal;
+  font-size: 22px;
+  letter-spacing: 2px;
+  max-width: 45%;
+}
 #amazon--cover  {
   justify-content: left;
 }
@@ -989,20 +1060,40 @@ a {
   margin: 0 auto 100px auto;
 }
 .about-tags h6{
+  font-family: 'Roboto Mono', sans-serif !important;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 12px !important;
   position: relative;
-  color: #a2aeb6;
+  color: #222;
+  font-style: normal;
   display: inline-block;
-  padding: 15px 20px;
+  padding: 4px 10px;
+  font-weight: 800;
   text-decoration: none;
   vertical-align: middle;
   margin: 0;
-  border: 1px solid rgba(162,174,182,.5);
+  border: 1px solid #222;
   margin: 0 15px;
 }
-
+.footer-dark {
+  background: #090909;
+}
+.footer-dark p {
+  color: #fff !important;
+  font-family: 'Roboto Mono', sans-serif;
+  letter-spacing: 2px;
+}
+.footer-dark a {
+  color: #fff !important;
+  letter-spacing: 2px;
+  font-family: 'Roboto Mono', sans-serif;
+}
+.footer-dark a:hover {
+  background: transparent !important;
+  text-decoration: underline !important;
+  /* border-bottom: 1px solid white !important; */
+}
 #smoke2 {
   width: 100vw;
   margin-top: 400px;
@@ -1117,7 +1208,12 @@ nav a{
   -ms-transition: background-size .2s ease;
   -o-transition: background-size .2s ease;
   transition: background-size .2s ease;
-  font-weight: 400 !important;
+  color: #000;
+  font-size: 13px !important;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-family: 'Roboto Mono';
+  font-weight: 800 !important;
 }
 
 .work-header a{

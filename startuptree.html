@@ -24,6 +24,7 @@
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato|Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -39,75 +40,50 @@
       </nav>
     </header>
 
-  <div class="section--cover" style="background: url(assets/map-header.jpg) no-repeat center; background-size: cover;">
-    <h2 data-uk-scrollspy="{cls:'uk-animation-fade', delay: 100}" class="work-header"><a href="http://startuptree.co" target="_blank">StartupTree</a></h2>
-  </div>
-
-  <div data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}" class="main-body">
-    <div class="container-work2">
-
-      <div class="work-roles uk-grid">
-        <div class="uk-width-medium-1-1" style="margin: -20px 0 50px;">
-          <span class="sub--section"><a href="work.html"><img src="assets/chevron-left.svg" style="height: 20px; margin-top: -2px; box-shadow: none !important;"><h5 style="display: inline;">Work</h5></a></span>
-        </div>
-        <div class="uk-width-1-2">
-          <span class="sub--section"><h2><a href="http://startuptree.co" target="_blank">StartupTree</a></h2></span>
-          <h5>Web Platform</h5>
-
-        </div>
-        <div class="uk-width-medium-1-2">
-          <p><span style="font-weight: bold">Type: </span> Internship</p>
-          <p><span style="font-weight: bold">Role: </span> Front End Engineer &amp; UI/UX Designer</p>
-          <p><span style="font-weight: bold">Tools: </span> HTML, CSS, Javascript, jQuery, UIKit, Illustrator</p>
-          <h4>Designed and implemented front-end features for leading web platform for university entrepreneurship.</h4>
-          <h3>Summer 2017 - Spring 2018</h3>
-        </div>
-      </div>
+  <div class="main">
+    <div class="main-title">
+      <h1>StartupTree</h1>
+      <h2>Designed and implemented front-end features for leading web platform for university entrepreneurship.</h2>
     </div>
-  </div>
-
-<div class="gray">
-    <div class="section--full" data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}">
-      <div class="uk-grid sub--section">
-        <div class="text-bottom uk-width-medium-1-1">
-          <h2><a href="https://startuptree.co", target="_blank">Redesigned and built new landing site.</a></h2>
-        </div>
-        <div class="uk-width-medium-1-2">
-          <img src = "assets/st1.png">
-        </div>
-        <div class="uk-width-medium-1-2">
-          <img src = "assets/st2.png">
-        </div>
+    <div class="section--cover" style="background: url(assets/map-header.jpg) no-repeat center; background-size: cover;">
+      <table>
+        <tr>
+          <td class="label" valign="top">Type</td><td>Internship</td>
+        </tr>
+        <tr>
+          <td class="label"  valign="top">Role</td><td>Front End Engineer <br />& UI/UX Designer</td>
+        </tr>
+        <tr>
+            <td class="label"  valign="top">Tools</td><td>HTML, CSS, Javascript, <br /> jQuery, UIKit, Illustrator</td>
+          </tr>
+      </table>
     </div>
+    <div class="main-subtitle">
+      <h3>Summer 2017 - Spring 2018</h3>
     </div>
-
-    <div class="section--full" data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}">
-      <div class="container-work2 work-roles">
-          <div class="uk-grid sub--section">
-                <div class="uk-width-medium-1-2">
-            <h2>My Contribution</h2>
-          </div>
-          <div class="uk-width-medium-1-2">
-            <p>At StartupTree, I’ve had the opportunity to work with a fast-paced, highly-motivated team dedicated to producing a
-              quickly-evolving product with great user experience. Within this startup environment,
-              I’ve honed my skills in coding HTML, CSS/SASS and JavaScript, while also using Illustrator
-              to create mockups and graphics for emerging features throughout the platform.
-            </p>
-          </div>
-          </div>
-      </div>
-    </div>
-
-    <div class="section--full" data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}">
-      <div class="uk-grid sub--section">
-        <div class="text-bottom uk-width-medium-1-1">
-          <h2><a href="https://cornell.startuptree.co", target="_blank">Created high-fidelity mockups and implemented features throughout platform.</a></h2>
-        </div>
-        <div class="uk-width-medium-1-1">
-          <img src="assets/startuptree2.png">
+    <div class="main-content">
+        <p>At StartupTree, I had the opportunity to work with a fast-paced, highly-motivated team dedicated to producing a
+            quickly-evolving product with great user experience. Within this startup environment,
+            I honed my skills in coding HTML, CSS/SASS and JavaScript, while also using Illustrator
+            to create mockups and graphics for emerging features throughout the platform.
+        </p>
+        <h2>Redesigned and built new landing site.</h2>
+        <div class="uk-grid sub--section">
+            <div class="uk-width-medium-1-2">
+              <img src = "assets/st1.png">
+            </div>
+            <div class="uk-width-medium-1-2">
+              <img src = "assets/st2.png">
+            </div>
         </div>
 
-    </div>
+        <h2>Created high-fidelity mockups and implemented features throughout platform.</h2>
+        <div class="uk-grid sub--section">
+            <div class="uk-width-medium-1-1">
+              <img src="assets/startuptree2.png">
+            </div>
+    
+        </div>
     </div>
 
     <div class="section--full" data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}">
@@ -119,11 +95,10 @@
       </div>
     </div>
 </div>
+</div>
 
 
-
-
-<footer>
+<footer class="footer-dark">
   <div>
     <p><strong>Hanna Arfine</strong></p>
     <p>UI / UX / Front End </p>
