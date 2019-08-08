@@ -631,6 +631,18 @@ table, th, td {
   max-width: 305px;
   padding: 0 8%;
 }
+.urban-timeline .light {
+  top: 35%;
+}
+.urban-timeline .box {
+  top: 55%;
+}
+#alpha {
+  top: 70%;
+}
+#beta {
+  top: 90%;
+}
 .right {
   text-align: right !important;
   float: right !important;

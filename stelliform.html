@@ -45,7 +45,7 @@
       <h1>Stelliform</h1>
       <h2>Worked with team of 7 to build an iOS and Android cross-platform mobile game that features fast-pasted action and strategy with clean, playful design.</h2>
     </div>
-    <div class="section--cover" style="background: url(assets/urban-cover.png) no-repeat center; background-size: cover;">
+    <div class="section--cover" style="background: url(assets/stelliform.png) no-repeat center; background-size: cover;">
       <table>
         <tr>
           <td class="label" valign="top">Type</td><td>School project | <a href="http://www.cs.cornell.edu/courses/cs4152/2019sp/", target="_blank">Cornell University</a></td>
@@ -65,73 +65,92 @@
         <p>
           <a href="https://play.google.com/store/apps/details?id=edu.cornell.sickocode.stelliform&hl=en_IN" target="_blank" id="urban">Stelliform</a> is an iOS and Android mobile game that my group members and I developed over the course of a semester. As lead
           UI designer, in addition to brainstorming game concepts with the group, I created wireframes, mockups, all interface assets, and promotional 
-          materials. We released the game at the 2019 GDIAC Showcase and it is available for download on the <a href="https://play.google.com/store/apps/details?id=edu.cornell.sickocode.stelliform&hl=en_IN" target="_blank" id="urban">Google Play store</a>.
+          materials. We released the game at the 2019 GDIAC Showcase and it is available for download on the <a href="https://play.google.com/store/apps/details?id=edu.cornell.sickocode.stelliform&hl=en_IN" target="_blank" id="urban">Google Play store.</a>
         </p>
 
-        <h2>The interface</h2>
-     
+        <h2>The premise</h2>
+
+        <p>
+            A star has fallen from the sky and the race is on to go claim it. However, 
+            the monsters around the area will not make it easy. Players can choose to play 
+            as a warrior, rogue, or wizard to blast through enemies by choosing powerful 
+            spells or attacks and casting them as quickly as possible while dodging enemy 
+            blows to stay alive. Stelliform is a real-time action card game that relies on 
+            quick swiping mechanics, split-second decision making, and pre-game planning.
+        </p>
+
         <div class="uk-grid sub--section">
-            <div class="uk-width-medium-1-2">
-              <img src = "assets/ug1.png">
+            <div class="uk-width-medium-1-1">
+              <img src = "assets/stelliform-screens.png" style="box-shadow: none;">
             </div>
-            <div class="uk-width-medium-1-2">
-              <img src = "assets/ug2.png">
-            </div>
-            <div class="uk-width-medium-1-1"><br><br></div>
-            <div class="uk-width-medium-1-2">
-                <img src = "assets/ug3.png">
-              </div>
-              <div class="uk-width-medium-1-2">
-                <img src = "assets/ug4.png">
-              </div>
         </div>
+     
+        
         <br><br>
         <p>
-          My main role in this project was to handle all design and frontend components. 
-          I created and refined a series of mockups in Sketch, then implemented in interface using Flask and jQuery.
-          <br><br>
-          The interface allows users to search by specific parameters or search parks similar to their favorite hangouts.
-          It then returns the top 10 matches along with photos, reviews, map, and similarity score explaining the match.
+          Our team consisted of 5 programmers and 2 designers. While the other designer created character assets, I managed the user
+          interface, all other game assets, animations, and tutorialization. 
         </p>
 
+        <div class="uk-grid sub--section">
+            <div class="uk-width-medium-1-1">
+              <img src = "assets/stelliform-screens2.png" style="box-shadow: none;">
+            </div>
+        </div>
+
         <div  class="section--hero blue--container urban-timeline">
-            <div class="do-title" id="dotitle"><h3>Behind the scenes </h3></div>
+            <div class="do-title" id="dotitle"><h3>Development Process </h3></div>
             <div class="do-container">
               <div class="brackets">
                 <div class="do-text ">
-                  <h2 class="right"> Data gathering </h2>
-                  <p class="right">Our initial data scrape yielded thousands of reviews from Google Maps, <a href="https://apops.mas.org/" target="_blank">APOPS,</a>
-                    and <a href="https://www.nycgovparks.org/parks/" target="_blank">NYC Parks</a> as well as the Wikipedia descriptions of each of the parks listed by NYC Planning on their database.
-                    
+                  <h2 class="right"> Initial proposal </h2>
+                  <p class="right"> The process began with many brainstorming sessions and discussions to determine the premise of the game.
                   </p>
                 </div>
               </div>
     
               <div class="light">
                 <div class="do-text left">
-                  <h2> Preprocessing </h2>
-                  <p> My groupmates used a python notebook to tokenize the reviews and create a dictionary mapping outdoor features to summary, which is stored in the applicaiton as a CSV.
-                    We generate a good types matrix of relevant words that users can use as search terms.
+                  <h2> Nondigital prototype </h2>
+                  <p> We developed and tested a nondigital prototype to see whether players would employ strategy in a fast-paced action game. After testing 
+                    the game with many users, our key takeaways were that players enjoyed the grid-based gesture system, however we needed to 
+                    improve the opportunities for strategic decisions rather than blind actions. 
                   </p>
                 </div>
-    
-    
               </div>
     
               <div class="box">
                 <div class="do-text right">
-                  <h2 class="right"> Analysis </h2>
-                  <p class="right">Upon entering the relevant search terms and area, the application takes into account the desired region and similarity to query 
-                    based upon cosine similarity, sentiment analysis, SVD analysis, and edit distance. It returns a list of weighted similarities
-                  and shows the user to top 10 most relevant parks. </p>
+                  <h2 class="right"> Technical prototype </h2>
+                  <p class="right">Our technical prototype taught us that adjusting the timing between enemy &amp; player 
+                    attacks and the number of enemies leads to difficult levels and can drastically change gameplay. This informed our balancing going forward.
+                    </p>
                 </div>
+              </div>
+
+              <div class="light" id="alpha">
+                  <div class="do-text left">
+                    <h2> Alpha release </h2>
+                    <p> By our alpha release, we had implemented all characters, level selection, and card assets. In response to user feedback, 
+                      we added the deck selection stage to increase the opportunity for strategic planning against enemies.  
+                    </p>
+                </div>
+              </div>
+
+              <div class="box" id="beta">
+                  <div class="do-text right">
+                    <h2 class="right"> Beta release </h2>
+                    <p class="right">The beta release focused on improving strategic opportunities for players with unique enemy combinations 
+                      as well as additional effects for spells.
+                    </p>
+                  </div>
               </div>
             </div>
         </div>
 
         <div class="uk-grid sub--section">
             <div class="uk-width-medium-1-1">
-              <img src = "assets/ug6.png">
+              <img src = "assets/stell0.png">
             </div>
             
         </div>
@@ -139,11 +158,9 @@
     </div>
     <div class="section--full" data-uk-scrollspy="{cls:'uk-animation-fade', delay:100}">
       <div class="container-work2 about-tags">
-        <h6>Python</h6>
-        <h6>Flask</h6>
-        <h6>Javascript</h6>
-        <h6>Natural Language Processing</h6>
-        <h6>Machine Learning</h6>
+        <h6>Sketch</h6>
+        <h6>Illustrator</h6>
+        <h6>Invision</h6>
       </div>
     </div>
 </div>
