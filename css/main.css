@@ -1642,12 +1642,14 @@ PAGE: CONTACT
   /* display: flex; */
   align-items: center;
   text-align: center;
-  padding-top: 40%;
-  position: relative;
+  padding-top: 8%;
+  /* position: relative; */
   z-index: 99;
+  padding-right: 5%;
 }
 .main--contact img {
   display: none;
+  visibility: hidden;
   max-width: 60vw;
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
   margin: auto;
@@ -1683,9 +1685,13 @@ PAGE: CONTACT
   font-size: 12px !important;
   transition: all .2s ease-in-out;
 }
-.white-label a:hover h2{
+.contact-links {
+
+  z-index: 999;
+}
+.contact-links a:hover h2{
   margin-right: 20px;
-    margin-left: -20px;
+  margin-left: -20px;
   transition: all .2s ease-in-out;
 }
 .main--contact img {

@@ -517,8 +517,16 @@ nav{
   } 
   .main--contact::after {
     display: none;
+    visibility: visible;
+  }
+  .main--contact {
+    height: 100vh;
   }
   .main--contact img {
+    opacity: .9;
+    margin-top: 30%;
+    max-height: 97vh;
+    visibility: visible;
     display: block;
   }
   a {
