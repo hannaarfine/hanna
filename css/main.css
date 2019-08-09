@@ -1639,13 +1639,71 @@ PAGE: CONTACT
 
 .main--contact {
   height: 85vh;
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  padding-top: 40%;
+  position: relative;
+  z-index: 99;
+}
+.main--contact img {
+  max-width: 60vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  margin: auto;
+  border-radius: 100%;
+}
+.white-label {
+  margin-top: 15%;
+}
+.flex-between {
+  justify-content: space-between;
   display: flex;
   align-items: center;
-  justify-content: center;
+  width: 100%;
+  padding-right: 5%;
+}
+.main--contact::after {
+  content: "";
+  background: url("../assets/contact-photo2.png") no-repeat center bottom;
+  background-size: contain;
+  opacity: 0.85;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 98;
+}
+.white-label h2{
+  background: white;
+  padding: 2px 14px;
+  border: 1px solid #222;
+  margin-top: 1%;
+  font-size: 12px !important;
+  transition: all .2s ease-in-out;
+}
+.white-label a:hover h2{
+  margin-right: 20px;
+    margin-left: -20px;
+  transition: all .2s ease-in-out;
+}
+.main--contact img {
+  opacity: .9;
+  max-height: 97vh;
 }
 .main--contact h2 {
   font-family: 'Roboto Mono', serif !important;
   font-style: normal !important;
+  font-size: 14px;
+}
+#hi-label {
+  padding: 4px 14px 4px 90px;
+  font-size: 16px !important;
+  
+}
+.active {
+  border-bottom: 1px solid #222 !important;
+
 }
 .contact-sq {
   width: 400px;

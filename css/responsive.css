@@ -504,12 +504,18 @@ nav{
     width: 240px;
     margin: auto;
   }
+  .flex-between {
+    justify-content: center;
+  }
   #upto3 {
     margin-bottom: 10px;
   }
   .section--contact {
     background-size: contain;
     background-repeat: repeat;
+  } 
+  .main--contact::after {
+    display: none;
   }
   a {
     text-decoration: none !important;
