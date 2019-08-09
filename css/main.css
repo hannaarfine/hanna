@@ -1636,6 +1636,17 @@ p{
 /************************
 PAGE: CONTACT
 ************************/
+
+.main--contact {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main--contact h2 {
+  font-family: 'Roboto Mono', serif !important;
+  font-style: normal !important;
+}
 .contact-sq {
   width: 400px;
   background: #fff;
