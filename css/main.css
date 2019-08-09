@@ -631,10 +631,16 @@ table, th, td {
   max-width: 305px;
   padding: 0 8%;
 }
-.urban-timeline .light {
+
+.stel-timeline .do-text {
+  max-width: 305px;
+  padding: 0 8%;
+}
+
+.stel-timeline .light {
   top: 35%;
 }
-.urban-timeline .box {
+.stel-timeline .box {
   top: 55%;
 }
 #alpha {
@@ -648,7 +654,7 @@ table, th, td {
   float: right !important;
   margin-right: 0 !important;
 }
-}
+
 .left {
   text-align: left !important;
   float: left !important;
@@ -661,6 +667,20 @@ table, th, td {
   margin-left: 0;
 }
 .urban-timeline .do-text p {
+  font-size: 12px;
+  float: left;
+  line-height: 17px;
+  text-align: left;
+  padding: 0;
+  max-width: 100%;
+}
+.stel-timeline .do-text h2 {
+  max-width: 100%;
+  float: left;
+  text-align: left;
+  margin-left: 0;
+}
+.stel-timeline .do-text p {
   font-size: 12px;
   float: left;
   line-height: 17px;
@@ -1585,7 +1605,7 @@ h6 {
 .work-section .panels{
   padding: 0;
   width: 58.1%;
-  margin-top: 10%;
+  margin-top: 6%;
 }
 
 /* .work-section {

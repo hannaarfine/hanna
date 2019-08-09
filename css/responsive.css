@@ -103,7 +103,7 @@ nav{
     font-weight: bold !important;
   }
   .craft {
-    top: 28%;
+    top: 15%;
     width: 100%;
     overflow-x: hidden;
   }
@@ -111,11 +111,14 @@ nav{
     width: auto;
     max-width: 150% !important;
   }
-  /* .blue--container {
-    top: 118vh;
-  } */
   .section--hero {
-    padding: 45px 0;
+    padding: 75px 0;
+  }
+  #section--bio {
+    padding: 0 !important;
+    margin-top: 30px !important;
+    height: 65vh !important;
+    border-bottom: none; 
   }
   .do-title::before {
     display: none;
@@ -169,18 +172,30 @@ nav{
   }
   .title {
     position: absolute;
-    top: 45%;
+    top: 30%;
   }
   .description {
     top: 60%;
     width: 260px;
     left: auto;
   }
+  #descriptions {
+    width: 120%;
+    margin-top: 16% !important;
+    position: absolute;
+  }
+  .title h2 {
+    font-size: 11px !important;
+  }
   .description h2{
     font-size: 20px;
   }
   .section {
-    height: 240vh;
+    height: 62vh;
+  }
+  #worktitle {
+    display: none;
+    visibility: hidden;
   }
   .titles button {
     margin: 0 25px;
@@ -215,7 +230,12 @@ nav{
     width: 100%;
   }
   .bioRight {
-    border: 0;
+    max-width: 75%;
+    margin: auto;
+    padding: 0;
+  }
+  .bioRight p {
+    padding: 8% 0 2% 0;
   }
   .arm {
     display: none;
@@ -266,6 +286,60 @@ nav{
   .right-container1 {
     background-position: bottom;
   }
+  .slick-next {
+    display: none;
+    visibility: hidden;
+  }
+  .slick-prev {
+    display: none;
+    visibility: hidden;
+  }
+  /************* project entry pages ********/
+  .main-title {
+    display: block;
+  }
+  .main {
+    margin-bottom: 8%;
+  }
+  .main-title h1 {
+    max-width: 100%;
+    margin: 0;
+  }
+  .main-title h2 {
+    max-width: 100%;
+    text-align: left;
+    margin-top: 3%;
+  }
+  .section--cover {
+    height: 68vh;
+  }
+  .section--cover table {
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+  .main-content h2 {
+    max-width: 100%;
+  }
+  .uk-width-medium-1-2 {
+    padding: 0 !important;
+  }
+  .uk-width-medium-1-1 {
+    padding: 0 !important;
+  }
+  .main-content img {
+    padding: 5% 0 !important;
+    box-shadow: none !important;
+  }
+  .main-content p {
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 10%;
+  }
+  .section--full {
+    max-width: 90vw;
+    margin: auto;
+  }
   /************* work page ***************/
   .work-section .panels {
     width: 98%;
@@ -275,9 +349,9 @@ nav{
     visibility: visible;
   }
   .panels-slick .slick-dots { 
-    max-width: 60vw !important;
-    margin-left: 20% !important;
-    top: -20px !important;
+    max-width: 68vw !important;
+    margin-left: 15% !important;
+    top: -35px !important;
   }
   .slick-dotted.slick-slider {
     padding-top: 4% !important;
@@ -314,6 +388,9 @@ nav{
   }
   #aboutme {
     left: 10%;
+  }
+  #abouttitle {
+    margin: 0;
   }
   .content {
     padding: 30px;
