@@ -12,6 +12,7 @@
     width: 40%;
     float: right;
   }
+
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
   .arm {
@@ -517,6 +518,9 @@ nav{
   .main--contact::after {
     display: none;
   }
+  .main--contact img {
+    display: block;
+  }
   a {
     text-decoration: none !important;
   }
@@ -570,4 +574,4 @@ nav{
   .gray {
     padding: 25px;
   }
-}
+
