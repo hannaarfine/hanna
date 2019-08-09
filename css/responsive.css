@@ -126,6 +126,64 @@ nav{
   .do-title::after {
     display: none;
   }
+  .urban-timeline .brackets {
+    padding: 0;
+  }
+  .urban-timeline .do-title::after {
+    display: block;
+  }
+  .urban-timeline .do-text {
+    background: white;
+    border: 1px solid black;
+    padding: 5%;
+    z-index: 999;
+  }
+  .urban-timeline .do-text p {
+    margin-bottom: 0;
+    text-align: left !important;
+    margin-top: 2%;
+  }
+  .urban-timeline .do-text h2 {
+    float: left !important;
+  }
+
+  .stel-timeline .brackets {
+    padding: 0;
+  }
+  .stel-timeline .do-title::after {
+    display: block;
+  }
+  .stel-timeline .do-text {
+    background: white;
+    border: 1px solid black;
+    padding: 5%;
+    z-index: 999;
+  }
+  .stel-timeline .do-text p {
+    margin-bottom: 0;
+    text-align: left !important;
+    margin-top: 2%;
+  }
+  .stel-timeline .do-text h2 {
+    float: left !important;
+  }
+  .stel-timeline .box {
+    top: 62%;
+  }
+  #alpha {
+    top: 85%;
+  }
+  #beta {
+    top: 110%;  
+  }
+  .stel-timeline #dotitle::after {
+    height: 115%;
+  }
+  #stel-img {
+    padding: 250px 0 30px !important;
+  }
+
+
   .do-title h3 {
     font-size: 12px !important;
   }
@@ -324,12 +382,27 @@ nav{
   .uk-width-medium-1-2 {
     padding: 0 !important;
   }
+  .uk-width-medium-1-1 h2{
+    padding-left: 10%;
+    padding-top: 5%;
+  }
   .uk-width-medium-1-1 {
     padding: 0 !important;
+  }
+  .uk-width-medium-1-2 h2{
+    padding-left: 10%;
+    padding-top: 5%;
+  }
+  .hide-mobile {
+    display: none;
+    visibility: hidden;
   }
   .main-content img {
     padding: 5% 0 !important;
     box-shadow: none !important;
+  }
+  .uk-width-medium-1-2  p{
+    padding-left: 8% !important;
   }
   .main-content p {
     max-width: 100%;
@@ -341,6 +414,13 @@ nav{
     margin: auto;
   }
   /************* work page ***************/
+  #workpage .panels-slick .slick-dots {
+    top: 25px !important;
+  }
+
+  #workpage .slick-slide {
+    margin-top: 3%;
+  }
   .work-section .panels {
     width: 98%;
   }
