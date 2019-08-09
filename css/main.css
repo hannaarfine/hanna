@@ -484,7 +484,7 @@ table, th, td {
 #dotitle::after{
   content: "";
     width: 1px;
-    height: 90%;
+    height: 75%;
     position: absolute;
     z-index: 99;
     top: 140px;
@@ -501,7 +501,7 @@ table, th, td {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  top: 25%;
+  top: 20%;
   z-index: 100;
   width: 50%;
 }
@@ -535,7 +535,7 @@ table, th, td {
   display: flex;
   align-items: center;
   right: 0%;
-  top: 45%;
+  top: 35%;
   z-index: 100;
   width: 50%;
 }
@@ -569,7 +569,7 @@ table, th, td {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  top: 75%;
+  top: 60%;
   width: 50%;
 }
 .box img {
@@ -1694,10 +1694,7 @@ PAGE: CONTACT
   margin-left: -20px;
   transition: all .2s ease-in-out;
 }
-.main--contact img {
-  opacity: .9;
-  max-height: 97vh;
-}
+
 .main--contact h2 {
   font-family: 'Roboto Mono', serif !important;
   font-style: normal !important;
