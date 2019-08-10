@@ -343,11 +343,16 @@ p {
   display: flex;
   justify-content: center;
 }
+.highlight {
+  background: yellow;
+}
 .section--cover {
-  /* padding: 85px 0; */
   height: 75vh;
   display: flex;
   align-items: flex-end;
+}
+#pan-cover {
+  height: 80vh;
 }
 .no-shadow {
   box-shadow: none !important;
@@ -421,6 +426,16 @@ table, th, td {
   font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding-bottom: 8%;
 }
+.main-content ul {
+  max-width: 45%;
+  margin: auto;
+  list-style: circle;
+}
+.main-content li {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
 .main-content h2 {
   font-family: 'Roboto Mono' !important;
   font-style: normal;
@@ -431,7 +446,9 @@ table, th, td {
 #amazon--cover  {
   justify-content: left;
 }
-
+#pan-content img {
+  box-shadow: none !important;
+}
 .blue--container {
   background: transparent;
   /* top: 158vh; */
