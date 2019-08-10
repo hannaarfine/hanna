@@ -414,6 +414,12 @@ nav{
     max-width: 90vw;
     margin: auto;
   }
+  #pan-cover {
+    background-position: 65% !important;
+  }
+  .main-content ul {
+    max-width: 65%;
+  }
   /************* work page ***************/
   #workpage .panels-slick .slick-dots {
     top: 25px !important;

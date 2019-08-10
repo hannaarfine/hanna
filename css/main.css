@@ -443,6 +443,11 @@ table, th, td {
   letter-spacing: 2px;
   max-width: 45%;
 }
+#pangaea {
+  max-width: 40%;
+  margin: auto;
+  padding: 10% 5% 5% 5%;
+}
 #amazon--cover  {
   justify-content: left;
 }
