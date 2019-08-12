@@ -1882,3 +1882,100 @@ BUTTONS
   background-color: #000 !important;
   color: #fff !important;
 }
+
+
+/****************
+PHOTOS
+***************/
+.photos-main h1{
+  font-family: 'Roboto Mono', sans-serif !important;
+  font-size: 22px !important;
+  letter-spacing: 4px !important;
+  text-transform: uppercase;
+  line-height: 40px !important;
+}
+.photo-panel {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  height: 76vh;
+  width: 60vw;
+  position: relative;
+  border: 1px solid #fff;
+  transition: all ease-in-out .3s;
+}
+.photo-panel table {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  
+}
+.photo-panel table tr td {
+  padding-left: 40px;
+}
+.photo-panel:hover {
+  border: 1px solid #222;
+}
+.scroll {
+  display: flex; /* [1] */
+  flex-wrap: nowrap; /* [1] */
+  overflow-x: auto; /* [1] */
+  -webkit-overflow-scrolling: touch; /* [4] */
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* [5] */ }
+
+/* [6] */
+.scroll::-webkit-scrollbar {
+  display: none; }
+
+.item {
+  flex: 0 0 auto;
+  margin-right: 2%;
+ }
+
+.photos-carousel {
+  margin-bottom: 8%;
+}
+.photos-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-toggle {
+  width: 60px;
+}
+#btn-grid:hover {
+  opacity: 1 !important;
+  cursor: pointer;
+}
+#btn-slide:hover {
+  opacity: 1 !important;
+  cursor: pointer;
+}
+#btn-grid {
+  margin-right: 15px;
+}
+.inactive {
+  opacity: .25;
+}
+.photo-panel-grid {
+  transition: all ease-in-out .3s;
+  height: 33.05vw;
+  /* width: 43.06vw; */
+  width: 47.8%;
+  display: inline-block;
+  margin-bottom: 2%;
+}
+/* 
+
+.photos-carousel {
+  height: 90vh;
+
+}
+.photos-carousel .slick-list .draggable {
+  height: 90vh;
+}
+
+.photos-carousel .slick-track {
+  height: 90vh;
+} */
