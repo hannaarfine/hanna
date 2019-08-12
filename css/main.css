@@ -1902,7 +1902,7 @@ PHOTOS
   width: 60vw;
   position: relative;
   border: 1px solid #fff;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out .4s;
 }
 .photo-panel table {
   position: absolute;
@@ -1959,9 +1959,8 @@ PHOTOS
   opacity: .25;
 }
 .photo-panel-grid {
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out .4s;
   height: 33.05vw;
-  /* width: 43.06vw; */
   width: 47.8%;
   display: inline-block;
   margin-bottom: 2%;
