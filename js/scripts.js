@@ -80,7 +80,7 @@ let fun_info = [
     'role': 'A few photos',
     'date': '2013 - Present',
     'img': './assets/lake.jpg',
-    'href': 'https://vsco.co/harfine/images/1'
+    'href': 'photos.html'
   },
   {'title': 'Laser printing',
     'role': 'Various laser engraving projects',
