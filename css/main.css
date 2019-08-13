@@ -1965,16 +1965,38 @@ PHOTOS
   display: inline-block;
   margin-bottom: 2%;
 }
-/* 
-
-.photos-carousel {
-  height: 90vh;
-
+.photos-main-content {
+  max-width: 90vw;
+  margin: auto;
 }
-.photos-carousel .slick-list .draggable {
-  height: 90vh;
-}
-
-.photos-carousel .slick-track {
-  height: 90vh;
+/* .photos-main-content img {
+  max-width: 43vw;
 } */
+.photos-main-content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.img-full {
+  max-width: 100vw !important;
+  width: 100% !important;
+}
+.img-half {
+  max-width: 43vw;
+}
+.picture-entry { 
+  margin-bottom: 2%;
+}
+.picture-entry p{
+  font-family: 'Roboto Mono';
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+
+
+#contact-body {
+  max-height: 100vh;
+  overflow: hidden;
+}
