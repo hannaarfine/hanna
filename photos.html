@@ -103,12 +103,7 @@
     }
 
     $(document).ready(function(){
-      // $.each( photo_entries, function( key, value ) {
-      //   // console.log( key + ": " + value.img_src );
-      //   $(".photos-carousel").append('<a href="photo-entry.html?entry='+key+'"><div class="photo-panel item" id=' +key +' style="background:url('+value.img_src +')"> <table><tr><td>'+value.date+'</td></tr><tr><td>'+value.title+'</td></tr></table></div></a>')
-      // });
       $.each(all_entries, function(key, value) {
-        console.log(key, value.cover)
         $(".photos-carousel").append('<a href="photo-entry.html?entry='+key+'"><div class="photo-panel item" id=' +key +' style="background:url('+value.cover +')"> <table><tr><td>'+value.date+'</td></tr><tr><td>'+value.title+'</td></tr></table></div></a>')
       })
        
