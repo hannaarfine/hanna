@@ -13,11 +13,9 @@
     <title>Hanna | Front End &amp; Design</title>
     <link rel = "icon" type="image/png" href="assets/ha.png">
     <link rel = "stylesheet" href="css/noramlize.css">
-    <link href="https://fonts.googleapis.com/css?family=Domine|Lato" rel="stylesheet">
     <link rel = "stylesheet" href="css/main.css">
     <link rel = "stylesheet" href="css/responsive.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
     <link rel = "stlesheet" href="https://cdnjs.com/libraries/uikit">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.gradient.css" />
@@ -29,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/photos.js"></script>
   </head>
 
   <body>
@@ -101,14 +100,17 @@
          'img_src': 'https://image-aws-us-west-2.vsco.co/93cb74/12998763/5d4271d350c1b6317a7b9874/1136x1526/vsco5d4271e571eff.jpg',
          'date': '07-2019'
        }
-      }
+    }
 
     $(document).ready(function(){
-      $.each( photo_entries, function( key, value ) {
-        console.log( key + ": " + value.img_src );
-        $(".photos-carousel").append('<a href="photo-entry.html?entry='+key+'"><div class="photo-panel item" id=' +key +' style="background:url('+value.img_src +')"> <table><tr><td>'+value.date+'</td></tr><tr><td>'+value.title+'</td></tr></table></div></a>')
-      });
-
+      // $.each( photo_entries, function( key, value ) {
+      //   // console.log( key + ": " + value.img_src );
+      //   $(".photos-carousel").append('<a href="photo-entry.html?entry='+key+'"><div class="photo-panel item" id=' +key +' style="background:url('+value.img_src +')"> <table><tr><td>'+value.date+'</td></tr><tr><td>'+value.title+'</td></tr></table></div></a>')
+      // });
+      $.each(all_entries, function(key, value) {
+        console.log(key, value.cover)
+        $(".photos-carousel").append('<a href="photo-entry.html?entry='+key+'"><div class="photo-panel item" id=' +key +' style="background:url('+value.cover +')"> <table><tr><td>'+value.date+'</td></tr><tr><td>'+value.title+'</td></tr></table></div></a>')
+      })
        
 
       });
