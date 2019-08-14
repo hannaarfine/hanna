@@ -298,6 +298,14 @@ nav{
   .halfRight {
     width: 100%;
   }
+  #btn-slide {
+    display: none;
+    visibility: hidden;
+  }
+  #btn-grid {
+    display: none;
+    visibility: hidden;
+  }
   .bioRight {
     max-width: 75%;
     margin: auto;
@@ -362,6 +370,22 @@ nav{
   .slick-prev {
     display: none;
     visibility: hidden;
+  }
+  /* .scroll {
+    transition: all ease-in-out .4s;
+    height: 33.05vw;
+    width: 47.8%;
+    display: inline-block;
+    margin-bottom: 2%;
+  } */
+  .item {
+    transition: all ease-in-out .4s;
+    height: 33.05vw;
+    width: 47.8%;
+    display: inline-block;
+    margin-bottom: 2%;
+    width: 100%;
+    height: 30vh;
   }
   /************* project entry pages ********/
   .main-title {

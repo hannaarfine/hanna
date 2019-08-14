@@ -131,6 +131,19 @@
 
         }
        }
+       if ($( window ).width() < 500 ){
+          $(".photos-carousel").removeClass('scroll')
+          $(".photo-panel").addClass('photo-panel-grid')
+        }
+       
+       $( window ).resize(function() {
+        if ($( window ).width() < 500 ){
+          $(".photos-carousel").removeClass('scroll')
+          $(".photo-panel").addClass('photo-panel-grid')
+        }
+       })
+
+       //
    
   </script>
 </body>
