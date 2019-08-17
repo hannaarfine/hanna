@@ -1982,7 +1982,7 @@ PHOTOS
   width: 100% !important;
 }
 .img-half {
-  max-width: 43vw;
+  max-width: 38vw;
 }
 .picture-entry { 
   margin-bottom: 2%;
@@ -1994,7 +1994,10 @@ PHOTOS
 }
 
 
-
+#photos-main {
+  max-width: 80vw;
+  margin: auto;
+}
 
 #contact-body {
   max-height: 100vh;
