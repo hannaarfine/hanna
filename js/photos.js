@@ -68,6 +68,7 @@ var all_entries = {
                   'src': 'https://image-aws-us-west-2.vsco.co/93cb74/12998763/5d06a6b305e3825f011294fb/1136x1515/vsco5d06a6b77dffb.jpg',
                   'class': 'img-half' 
                   },
+                  
                   {
                     'src': 'https://image-aws-us-west-2.vsco.co/93cb74/12998763/5d06c41bb60b2e674f33431a/vsco5d06c41ff1a92.jpg',
                     'class': 'img-half'
@@ -79,6 +80,10 @@ var all_entries = {
                   {
                     'src': 'https://image-aws-us-west-2.vsco.co/93cb74/12998763/5d06ca688ea1d2689f856939/vsco5d06ca6be175c.jpg',
                     'class': 'img-full'
+                  },
+                  {
+                    'src': 'https://image-aws-us-west-2.vsco.co/93cb74/12998763/5d4c672e4cf98a42dd2fea7b/960x1434/vsco5d4c673c65b5a.jpg',
+                    'class': 'img-half'
                   },
                   {
                     'src': 'https://image-aws-us-west-2.vsco.co/93cb74/12998763/5d0c87aa19499c611507535e/1136x1515/vsco5d0c87bd69fd2.jpg',

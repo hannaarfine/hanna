@@ -85,6 +85,9 @@ nav{
 }
 
 @media only screen and (min-width : 320px) and (max-width :667px) {
+  #photos-main {
+    max-width: 90vw;
+  }
   .title {
     z-index: 999;
   }
