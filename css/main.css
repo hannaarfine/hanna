@@ -1917,6 +1917,15 @@ PHOTOS
 .photo-panel:hover {
   border: 1px solid #222;
 }
+.up-next-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.up-next-items .panel {
+  width: auto;
+  max-width: 295px;
+}
 .scroll {
   display: flex; /* [1] */
   flex-wrap: nowrap; /* [1] */
@@ -2002,4 +2011,19 @@ PHOTOS
 #contact-body {
   max-height: 100vh;
   overflow: hidden;
+}
+
+.up-next h2 {
+  font-family: 'Roboto Mono', sans-serif !important;
+  font-style: normal !important;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.up-next {
+  max-width: 70%;
+  margin: auto;
+  margin-bottom: 8%;
 }
