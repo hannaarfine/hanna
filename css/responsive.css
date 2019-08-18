@@ -242,7 +242,7 @@ nav{
   }
   .box {
     width: 100%;
-    top: %;
+    top: 70%;
   }
   .box::after{
     display: none;
