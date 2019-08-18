@@ -88,6 +88,11 @@ nav{
   #photos-main {
     max-width: 90vw;
   }
+  .see-more-photos {
+    display: block !important;
+    visibility: visible !important;
+    text-align: center !important;
+  }
   .title {
     z-index: 999;
   }
@@ -373,6 +378,9 @@ nav{
   .slick-prev {
     display: none;
     visibility: hidden;
+  }
+  .img-half {
+    max-width: 43vw;
   }
   .item {
     transition: all ease-in-out .4s;
