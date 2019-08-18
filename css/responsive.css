@@ -631,7 +631,7 @@ nav{
     height: 45vh;
   }
   .up-next {
-    max-width: 100%;
+    max-width: 90%;
   }
   .up-next-items {
     display: flex; /* [1] */

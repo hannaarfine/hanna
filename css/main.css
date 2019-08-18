@@ -1918,13 +1918,17 @@ PHOTOS
   border: 1px solid #222;
 }
 .up-next-items {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 }
 .up-next-items .panel {
-  width: auto;
-  max-width: 295px;
+  /* width: auto;
+  max-width: 295px; */
+  vertical-align: top;
+  width: 32%;
+  margin-top: 0;
+  display: inline-block;
 }
 .scroll {
   display: flex; /* [1] */
